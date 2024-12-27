@@ -1,0 +1,593 @@
+2024-12-14 14:05:48,376 - __main__ - INFO - Starting brochure generation task task_1734165348 for Taj Mahal Palace Hotel
+2024-12-23 00:42:13,794 - __main__ - INFO - Starting brochure generation task task_1734894733 for Azure Paradise Resort
+2024-12-23 01:02:50,389 - __main__ - INFO - Starting brochure generation task task_1734895970 for Serenity Bay Resort & Spa
+2024-12-23 01:09:37,410 - __main__ - INFO - Starting brochure generation task task_1734896377 for Serenity Bay Resort & Spa
+2024-12-23 19:35:37,480 - __main__ - INFO - Starting brochure generation task task_1734962737 for Azure Paradise Reosrt
+2024-12-23 19:39:13,654 - __main__ - INFO - Starting brochure generation task task_1734962953 for Azure Paradise Reosrt
+2024-12-23 19:46:23,675 - __main__ - INFO - Starting brochure generation task task_1734963383 for Azure Paradise Reosrt
+2024-12-23 19:50:44,045 - __main__ - INFO - Starting brochure generation task task_1734963644 for Azure Paradise Resort
+2024-12-23 19:52:59,600 - __main__ - INFO - Starting brochure generation task task_1734963779 for Azure Paradise Resort
+2024-12-23 19:56:22,237 - __main__ - INFO - Starting brochure generation task task_1734963982 for Azure Paradise Resort
+2024-12-23 19:58:47,797 - __main__ - INFO - Starting brochure generation task task_1734964127 for Azure Paradise Resort
+2024-12-23 20:06:23,720 - __main__ - INFO - Starting brochure generation task task_1734964583 for Azure Paradise Resort
+2024-12-23 20:11:16,026 - __main__ - INFO - Starting brochure generation task task_1734964876 for Azure Paradise Resort
+2024-12-23 20:15:38,637 - __main__ - INFO - Starting brochure generation task task_1734965138 for Azure Paradise Resort
+2024-12-23 20:20:54,682 - __main__ - INFO - Starting brochure generation task task_1734965454 for Azure Paradise Resort
+2024-12-23 20:27:38,702 - __main__ - INFO - Starting brochure generation task task_1734965858 for Azure Paradise Resort
+2024-12-23 20:30:24,522 - __main__ - INFO - Starting brochure generation task task_1734966024 for Azure Paradise Resort
+2024-12-23 20:32:08,111 - __main__ - INFO - Starting brochure generation task task_1734966128 for Azure Paradise Resort
+2024-12-23 20:34:57,310 - __main__ - INFO - Starting brochure generation task task_1734966297 for Azure Paradise Resort
+2024-12-23 20:37:14,016 - __main__ - INFO - Starting brochure generation task task_1734966434 for Azure Paradise Resort
+2024-12-23 20:44:06,469 - __main__ - ERROR - Error generating brochure: SinglePageBrochureGenerator.__init__() missing 2 required positional arguments: 'hotel_name' and 'location'
+2024-12-24 00:06:03,640 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'custom_prompts'
+2024-12-24 00:49:16,760 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 00:53:01,038 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 10:48:06,969 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 10:51:08,698 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 10:55:19,385 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 10:59:28,452 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:03:15,246 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:05:56,053 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:09:19,979 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:13:13,765 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:19:28,696 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:23:06,643 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:27:11,261 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:32:11,807 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:35:19,487 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:41:10,007 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:44:58,066 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:48:41,291 - __main__ - ERROR - Error generating brochure: 'SinglePageBrochureGenerator' object has no attribute 'contact_email'
+2024-12-24 11:56:17,410 - __main__ - INFO - Starting brochure generation task task_1735021577 for Azure Paradise Resort
+2024-12-24 11:56:17,431 - __main__ - ERROR - Error in task task_1735021577: unhashable type: 'set'
+2024-12-24 12:03:41,736 - __main__ - INFO - Starting brochure generation task task_1735022021 for Azure Paradise Resort
+2024-12-24 12:03:41,755 - __main__ - ERROR - Error in task task_1735022021: unhashable type: 'set'
+2024-12-24 12:05:05,399 - __main__ - INFO - Starting brochure generation task task_1735022105 for Azure Paradise Resort
+2024-12-24 12:05:05,419 - __main__ - ERROR - Error in task task_1735022105: unhashable type: 'set'
+2024-12-24 12:06:04,414 - __main__ - INFO - Starting brochure generation task task_1735022164 for Azure Paradise Resort
+2024-12-24 12:06:04,438 - __main__ - ERROR - Error in task task_1735022164: unhashable type: 'set'
+2024-12-24 12:07:09,165 - __main__ - INFO - Starting brochure generation task task_1735022229 for Azure Paradise Resort
+2024-12-24 12:07:09,189 - __main__ - ERROR - Error in task task_1735022229: unhashable type: 'set'
+2024-12-24 12:26:40,031 - __main__ - INFO - Starting brochure generation task task_1735023400 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:41,360 - __main__ - INFO - Starting brochure generation task task_1735023401 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:43,009 - __main__ - INFO - Starting brochure generation task task_1735023403 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:43,205 - __main__ - INFO - Starting brochure generation task task_1735023403 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:43,383 - __main__ - INFO - Starting brochure generation task task_1735023403 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:43,541 - __main__ - INFO - Starting brochure generation task task_1735023403 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:43,708 - __main__ - INFO - Starting brochure generation task task_1735023403 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:43,875 - __main__ - INFO - Starting brochure generation task task_1735023403 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:44,045 - __main__ - INFO - Starting brochure generation task task_1735023404 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:44,221 - __main__ - INFO - Starting brochure generation task task_1735023404 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:44,400 - __main__ - INFO - Starting brochure generation task task_1735023404 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:44,723 - __main__ - INFO - Starting brochure generation task task_1735023404 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:44,920 - __main__ - INFO - Starting brochure generation task task_1735023404 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:45,087 - __main__ - INFO - Starting brochure generation task task_1735023405 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:45,341 - __main__ - INFO - Starting brochure generation task task_1735023405 for The Celestial Palace Resort & Spa
+2024-12-24 12:26:51,659 - __main__ - ERROR - Error in task task_1735023404: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,662 - __main__ - ERROR - Error in task task_1735023404: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,664 - __main__ - ERROR - Error in task task_1735023404: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,670 - __main__ - ERROR - Error in task task_1735023404: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,671 - __main__ - ERROR - Error in task task_1735023404: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,671 - __main__ - ERROR - Error in task task_1735023405: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,674 - __main__ - ERROR - Error in task task_1735023403: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,674 - __main__ - ERROR - Error in task task_1735023400: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,675 - __main__ - ERROR - Error in task task_1735023403: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,677 - __main__ - ERROR - Error in task task_1735023403: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,678 - __main__ - ERROR - Error in task task_1735023405: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,680 - __main__ - ERROR - Error in task task_1735023403: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,681 - __main__ - ERROR - Error in task task_1735023403: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,681 - __main__ - ERROR - Error in task task_1735023401: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:26:51,681 - __main__ - ERROR - Error in task task_1735023403: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:27:07,679 - __main__ - INFO - Starting brochure generation task task_1735023427 for The Celestial Palace Resort & Spa
+2024-12-24 12:27:07,706 - __main__ - ERROR - Error in task task_1735023427: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-24 12:29:40,069 - __main__ - INFO - Starting brochure generation task task_1735023580 for The Celestial Palace Resort & Spa
+2024-12-24 14:11:32,535 - __main__ - INFO - Starting brochure generation task task_1735029692 for The Celestial Palace Resort & Spa
+2024-12-24 14:13:14,649 - __main__ - ERROR - Error in task task_1735029692: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 14:19:55,458 - __main__ - INFO - Starting brochure generation task task_1735030195 for The Celestial Palace Resort & Spa
+2024-12-24 14:21:29,464 - __main__ - ERROR - Error in task task_1735030195: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 14:24:08,770 - __main__ - INFO - Starting brochure generation task task_1735030448 for The Celestial Palace Resort & Spa
+2024-12-24 14:25:44,270 - __main__ - ERROR - Error in task task_1735030448: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 14:27:00,468 - __main__ - INFO - Starting brochure generation task task_1735030620 for The Celestial Palace Resort & Spa
+2024-12-24 14:27:25,958 - __main__ - ERROR - Error in task task_1735030620: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 14:31:29,840 - __main__ - INFO - Starting brochure generation task task_1735030889 for The Celestial Palace Resort & Spa
+2024-12-24 14:31:56,361 - __main__ - ERROR - Error in task task_1735030889: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 14:33:56,419 - __main__ - INFO - Starting brochure generation task task_1735031036 for The Celestial Palace Resort & Spa
+2024-12-24 14:34:21,563 - __main__ - ERROR - Error in task task_1735031036: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 14:51:55,853 - __main__ - INFO - Starting brochure generation task task_1735032115 for The Celestial Palace Resort & Spa
+2024-12-24 14:52:21,387 - __main__ - ERROR - Error in task task_1735032115: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 14:59:56,049 - __main__ - INFO - Starting brochure generation task task_1735032596 for The Celestial Palace Resort & Spa
+2024-12-24 15:00:21,834 - __main__ - ERROR - Error in task task_1735032596: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 15:07:05,903 - __main__ - INFO - Starting brochure generation task task_1735033025 for The Celestial Palace Resort & Spa
+2024-12-24 15:07:31,335 - __main__ - ERROR - Error in task task_1735033025: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 15:08:08,798 - __main__ - INFO - Starting brochure generation task task_1735033088 for The Celestial Palace Resort & Spa
+2024-12-24 15:08:33,883 - __main__ - ERROR - Error in task task_1735033088: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-24 15:18:11,482 - __main__ - INFO - Starting brochure generation task task_1735033691 for The Celestial Palace Resort & Spa
+2024-12-24 15:18:36,903 - __main__ - ERROR - Error in task task_1735033691: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 09:00:16,898 - __main__ - INFO - Starting brochure generation task task_1735270216 for Unknown Hotel
+2024-12-27 09:03:50,673 - __main__ - INFO - Starting brochure generation task task_1735270430 for The Celestial Palace Resort & Spa
+2024-12-27 09:07:54,769 - __main__ - INFO - Starting brochure generation task task_1735270674 for The Celestial Palace Resort & Spa
+2024-12-27 09:15:30,181 - __main__ - INFO - Starting brochure generation task task_1735271130 for The Celestial Palace Resort & Spa
+2024-12-27 09:15:55,577 - __main__ - ERROR - Error in task task_1735271130: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 09:40:42,450 - __main__ - INFO - Starting brochure generation task task_1735272642 for The Celestial Palace Resort & Spa
+2024-12-27 09:45:31,078 - __main__ - INFO - Starting brochure generation task task_1735272931 for The Celestial Palace Resort & Spa
+2024-12-27 09:45:56,170 - __main__ - ERROR - Error in task task_1735272931: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 09:53:42,398 - __main__ - INFO - Starting brochure generation task task_1735273422 for The Celestial Palace Resort & Spa
+2024-12-27 09:54:07,236 - __main__ - ERROR - Error in task task_1735273422: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 09:58:07,662 - __main__ - INFO - Starting brochure generation task task_1735273687 for The Celestial Palace Resort & Spa
+2024-12-27 10:19:16,748 - __main__ - INFO - Starting brochure generation task task_1735274956 for The Celestial Palace Resort & Spa
+2024-12-27 10:19:43,414 - __main__ - ERROR - Error in task task_1735274956: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:22:53,865 - __main__ - INFO - Starting brochure generation task task_1735275173 for The Celestial Palace Resort & Spa
+2024-12-27 10:23:21,814 - __main__ - ERROR - Error in task task_1735275173: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:26:14,326 - __main__ - INFO - Starting brochure generation task task_1735275374 for The Celestial Palace Resort & Spa
+2024-12-27 10:26:40,131 - __main__ - ERROR - Error in task task_1735275374: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:29:28,193 - __main__ - INFO - Starting brochure generation task task_1735275568 for The Celestial Palace Resort & Spa
+2024-12-27 10:29:54,169 - __main__ - ERROR - Error in task task_1735275568: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:45:19,246 - __main__ - INFO - Starting brochure generation task task_1735276519 for The Celestial Palace Resort & Spa
+2024-12-27 10:45:43,813 - __main__ - ERROR - Error in task task_1735276519: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:49:26,327 - __main__ - INFO - Starting brochure generation task task_1735276766 for The Celestial Palace Resort & Spa
+2024-12-27 10:49:50,389 - __main__ - ERROR - Error in task task_1735276766: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:50:25,196 - __main__ - INFO - Starting brochure generation task task_1735276825 for The Celestial Palace Resort & Spa
+2024-12-27 10:50:53,533 - __main__ - ERROR - Error in task task_1735276825: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:51:13,886 - __main__ - INFO - Starting brochure generation task task_1735276873 for The Celestial Palace Resort & Spa
+2024-12-27 10:51:38,020 - __main__ - ERROR - Error in task task_1735276873: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:54:02,368 - __main__ - INFO - Starting brochure generation task task_1735277042 for The Celestial Palace Resort & Spa
+2024-12-27 10:54:27,652 - __main__ - ERROR - Error in task task_1735277042: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:57:09,272 - __main__ - INFO - Starting brochure generation task task_1735277229 for The Celestial Palace Resort & Spa
+2024-12-27 10:57:35,260 - __main__ - ERROR - Error in task task_1735277229: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 10:58:52,959 - __main__ - INFO - Starting brochure generation task task_1735277332 for The Celestial Palace Resort & Spa
+2024-12-27 10:59:50,131 - __main__ - ERROR - Error in task task_1735277332: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:01:41,900 - __main__ - INFO - Starting brochure generation task task_1735277501 for The Celestial Palace Resort & Spa
+2024-12-27 11:02:31,572 - __main__ - ERROR - Error in task task_1735277501: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:04:54,545 - __main__ - INFO - Starting brochure generation task task_1735277694 for The Celestial Palace Resort & Spa
+2024-12-27 11:05:20,807 - __main__ - ERROR - Error in task task_1735277694: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:17:12,688 - __main__ - INFO - Starting brochure generation task task_1735278432 for The Celestial Palace Resort & Spa
+2024-12-27 11:17:38,104 - __main__ - ERROR - Error in task task_1735278432: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:19:58,253 - __main__ - INFO - Starting brochure generation task task_1735278598 for The Celestial Palace Resort & Spa
+2024-12-27 11:20:24,869 - __main__ - ERROR - Error in task task_1735278598: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:23:04,570 - __main__ - INFO - Starting brochure generation task task_1735278784 for The Celestial Palace Resort & Spa
+2024-12-27 11:23:29,444 - __main__ - ERROR - Error in task task_1735278784: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:25:49,523 - __main__ - INFO - Starting brochure generation task task_1735278949 for The Celestial Palace Resort & Spa
+2024-12-27 11:26:14,794 - __main__ - ERROR - Error in task task_1735278949: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:28:51,234 - __main__ - INFO - Starting brochure generation task task_1735279131 for The Celestial Palace Resort & Spa
+2024-12-27 11:29:18,286 - __main__ - ERROR - Error in task task_1735279131: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:34:05,343 - __main__ - INFO - Starting brochure generation task task_1735279445 for The Celestial Palace Resort & Spa
+2024-12-27 11:34:32,200 - __main__ - ERROR - Error in task task_1735279445: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:38:29,939 - __main__ - INFO - Starting brochure generation task task_1735279709 for The Celestial Palace Resort & Spa
+2024-12-27 11:38:56,546 - __main__ - ERROR - Error in task task_1735279709: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:42:22,409 - __main__ - INFO - Starting brochure generation task task_1735279942 for The Celestial Palace Resort & Spa
+2024-12-27 11:42:49,194 - __main__ - ERROR - Error in task task_1735279942: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:45:02,833 - __main__ - INFO - Starting brochure generation task task_1735280102 for The Celestial Palace Resort & Spa
+2024-12-27 11:45:30,556 - __main__ - ERROR - Error in task task_1735280102: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:50:16,701 - __main__ - INFO - Starting brochure generation task task_1735280308 for The Celestial Palace Resort & Spa
+2024-12-27 11:50:18,778 - __main__ - ERROR - Error in task task_1735280308: 'SinglePageBrochureGenerator' object has no attribute 'custom_prompts'
+2024-12-27 11:51:42,824 - __main__ - INFO - Starting brochure generation task task_1735280502 for The Celestial Palace Resort & Spa
+2024-12-27 11:52:07,423 - __main__ - ERROR - Error in task task_1735280502: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:54:58,190 - __main__ - INFO - Starting brochure generation task task_1735280698 for The Celestial Palace Resort & Spa
+2024-12-27 11:55:21,565 - __main__ - ERROR - Error in task task_1735280698: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:57:44,072 - __main__ - INFO - Starting brochure generation task task_1735280864 for The Celestial Palace Resort & Spa
+2024-12-27 11:58:07,824 - __main__ - ERROR - Error in task task_1735280864: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 11:59:26,659 - __main__ - INFO - Starting brochure generation task task_1735280966 for The Celestial Palace Resort & Spa
+2024-12-27 11:59:51,016 - __main__ - ERROR - Error in task task_1735280966: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:01:13,159 - __main__ - INFO - Starting brochure generation task task_1735281073 for The Celestial Palace Resort & Spa
+2024-12-27 12:01:37,255 - __main__ - ERROR - Error in task task_1735281073: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:03:59,867 - __main__ - INFO - Starting brochure generation task task_1735281239 for The Celestial Palace Resort & Spa
+2024-12-27 12:04:22,521 - __main__ - ERROR - Error in task task_1735281239: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:06:03,531 - __main__ - INFO - Starting brochure generation task task_1735281363 for The Celestial Palace Resort & Spa
+2024-12-27 12:06:27,075 - __main__ - ERROR - Error in task task_1735281363: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:08:39,023 - __main__ - INFO - Starting brochure generation task task_1735281519 for The Celestial Palace Resort & Spa
+2024-12-27 12:09:03,108 - __main__ - ERROR - Error in task task_1735281519: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:11:04,276 - __main__ - INFO - Starting brochure generation task task_1735281664 for The Celestial Palace Resort & Spa
+2024-12-27 12:11:26,677 - __main__ - ERROR - Error in task task_1735281664: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:15:49,568 - __main__ - INFO - Starting brochure generation task task_1735281949 for The Celestial Palace Resort & Spa
+2024-12-27 12:16:13,155 - __main__ - ERROR - Error in task task_1735281949: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:19:29,403 - __main__ - INFO - Starting brochure generation task task_1735282169 for The Celestial Palace Resort & Spa
+2024-12-27 12:19:54,178 - __main__ - ERROR - Error in task task_1735282169: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:22:47,836 - __main__ - INFO - Starting brochure generation task task_1735282367 for The Celestial Palace Resort & Spa
+2024-12-27 12:23:12,142 - __main__ - ERROR - Error in task task_1735282367: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:26:32,196 - __main__ - INFO - Starting brochure generation task task_1735282475 for The Celestial Palace Resort & Spa
+2024-12-27 12:26:32,198 - __main__ - INFO - Starting brochure generation task task_1735282592 for The Celestial Palace Resort & Spa
+2024-12-27 12:26:34,271 - __main__ - ERROR - Error in task task_1735282475: 'SinglePageBrochureGenerator' object has no attribute 'custom_prompts'
+2024-12-27 12:26:34,271 - __main__ - ERROR - Error in task task_1735282592: 'SinglePageBrochureGenerator' object has no attribute 'custom_prompts'
+2024-12-27 12:27:23,182 - __main__ - INFO - Starting brochure generation task task_1735282643 for The Celestial Palace Resort & Spa
+2024-12-27 12:27:46,867 - __main__ - ERROR - Error in task task_1735282643: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:30:33,247 - __main__ - INFO - Starting brochure generation task task_1735282833 for The Celestial Palace Resort & Spa
+2024-12-27 12:30:59,159 - __main__ - ERROR - Error in task task_1735282833: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:32:23,881 - __main__ - INFO - Starting brochure generation task task_1735282943 for The Celestial Palace Resort & Spa
+2024-12-27 12:32:48,815 - __main__ - ERROR - Error in task task_1735282943: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:34:56,486 - __main__ - INFO - Starting brochure generation task task_1735283096 for The Celestial Palace Resort & Spa
+2024-12-27 12:35:21,292 - __main__ - ERROR - Error in task task_1735283096: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:36:47,094 - __main__ - INFO - Starting brochure generation task task_1735283207 for The Celestial Palace Resort & Spa
+2024-12-27 12:37:12,940 - __main__ - ERROR - Error in task task_1735283207: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:38:40,544 - __main__ - INFO - Starting brochure generation task task_1735283320 for The Celestial Palace Resort & Spa
+2024-12-27 12:39:07,416 - __main__ - ERROR - Error in task task_1735283320: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:39:52,109 - __main__ - INFO - Starting brochure generation task task_1735283392 for The Celestial Palace Resort & Spa
+2024-12-27 12:40:19,612 - __main__ - ERROR - Error in task task_1735283392: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:41:58,000 - __main__ - INFO - Starting brochure generation task task_1735283517 for The Celestial Palace Resort & Spa
+2024-12-27 12:42:24,253 - __main__ - ERROR - Error in task task_1735283517: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 12:43:59,005 - __main__ - INFO - Starting brochure generation task task_1735283610 for The Celestial Palace Resort & Spa
+2024-12-27 12:44:24,495 - __main__ - ERROR - Error in task task_1735283610: [Errno 13] Permission denied: 'generated_brochures/Celestial Palace Resort & Spa_full_bleed_brochure.pdf'
+2024-12-27 13:30:38,529 - api.brochure_api - INFO - Starting brochure generation task e9554405-54ad-47c8-ad85-478c2fd80d78
+2024-12-27 13:30:41,270 - api.brochure_api - ERROR - Error in brochure generation task e9554405-54ad-47c8-ad85-478c2fd80d78: SinglePageBrochureGenerator.generate_brochure() takes 1 positional argument but 2 were given
+2024-12-27 13:32:32,391 - api.brochure_api - INFO - Starting brochure generation task 7c3e082f-7997-4877-849e-40f0934d1f67
+2024-12-27 13:32:54,460 - api.brochure_api - ERROR - Error in brochure generation task 7c3e082f-7997-4877-849e-40f0934d1f67: 'SinglePageBrochureGenerator' object has no attribute 'save_as_pdf'
+2024-12-27 13:34:27,242 - api.brochure_api - INFO - Starting brochure generation task 043d875a-7eb6-470e-932b-d251c15cffb4
+2024-12-27 13:34:29,289 - api.brochure_api - ERROR - Error in brochure generation task 043d875a-7eb6-470e-932b-d251c15cffb4: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-27 13:40:38,067 - __main__ - INFO - Starting brochure generation task 9426f0d7-f568-4317-924b-69e6c9e50dd9
+2024-12-27 13:40:57,930 - __main__ - ERROR - Error in brochure generation task 9426f0d7-f568-4317-924b-69e6c9e50dd9: 'SinglePageBrochureGenerator' object has no attribute 'save_as_pdf'
+2024-12-27 13:50:11,017 - __main__ - INFO - Starting brochure generation task 5c52d9ee-432b-41b8-afe2-aab2e04ba300
+2024-12-27 13:50:32,411 - __main__ - ERROR - Error in brochure generation task 5c52d9ee-432b-41b8-afe2-aab2e04ba300: 'SinglePageBrochureGenerator' object has no attribute 'save_as_pdf'
+2024-12-27 13:57:22,816 - __main__ - INFO - Starting brochure generation task task_1735288042 for The Grand Meridian Resort
+2024-12-27 14:24:30,238 - asyncio - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-27 19:18:31,290 - __main__ - ERROR - Error in task task_1735307311: 'BrochureRequest' object has no attribute 'hotel_name'
+2024-12-27 19:21:22,125 - __main__ - ERROR - Error in task task_1735307482: 'BrochureRequest' object has no attribute 'hotel_name'
+2024-12-27 19:26:14,002 - __main__ - ERROR - Error in task task_1735307774: 'BrochureRequest' object has no attribute 'hotel_name'
+2024-12-27 19:28:00,239 - __main__ - ERROR - Error in task task_1735307880: 'BrochureRequest' object has no attribute 'hotel_name'
+2024-12-27 19:29:10,395 - __main__ - ERROR - Error in task task_1735307950: 'BrochureRequest' object has no attribute 'hotel_name'
+2024-12-27 19:31:25,571 - __main__ - ERROR - Error in task task_1735308085: 'BrochureRequest' object has no attribute 'hotel_name'
+2024-12-27 19:32:19,902 - __main__ - ERROR - Error in task task_1735308139: 'BrochureRequest' object has no attribute 'hotel_name'
+2024-12-27 19:45:34,623 - uvicorn.error - INFO - Started server process [11652]
+2024-12-27 19:45:34,624 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 19:45:34,625 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 19:45:34,625 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 19:47:03,313 - __main__ - INFO - Starting brochure generation task task_1735309023
+2024-12-27 19:47:11,454 - __main__ - ERROR - Error in task task_1735309023: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 19:52:16,829 - __main__ - INFO - Starting brochure generation task task_1735309336
+2024-12-27 19:52:23,097 - __main__ - ERROR - Error in task task_1735309336: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 19:56:25,514 - __main__ - INFO - Starting brochure generation task task_1735309585
+2024-12-27 19:56:32,872 - __main__ - ERROR - Error in task task_1735309585: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 19:59:21,104 - __main__ - INFO - Starting brochure generation task task_1735309761
+2024-12-27 19:59:28,521 - __main__ - ERROR - Error in task task_1735309761: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 20:04:18,742 - __main__ - INFO - Starting brochure generation task task_1735310058
+2024-12-27 20:04:26,565 - __main__ - ERROR - Error in task task_1735310058: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 20:26:44,818 - uvicorn.error - INFO - Shutting down
+2024-12-27 20:26:44,926 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 20:26:44,927 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 20:26:44,928 - uvicorn.error - INFO - Finished server process [11652]
+2024-12-27 20:27:03,685 - uvicorn.error - INFO - Started server process [17044]
+2024-12-27 20:27:03,706 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 20:27:03,706 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 20:27:03,707 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 20:27:43,947 - __main__ - INFO - Starting brochure generation task task_1735311463 for The Create A Brochure For The Grand Palace Hotel In Paris Featuring Luxury Suites
+2024-12-27 20:27:43,948 - __main__ - ERROR - Error in task task_1735311463: SinglePageBrochureGenerator.__init__() got an unexpected keyword argument 'custom_prompts'
+2024-12-27 20:31:32,914 - uvicorn.error - INFO - Shutting down
+2024-12-27 20:31:33,020 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 20:31:33,021 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 20:31:33,022 - uvicorn.error - INFO - Finished server process [17044]
+2024-12-27 20:31:46,558 - uvicorn.error - INFO - Started server process [25108]
+2024-12-27 20:31:46,561 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 20:31:46,561 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 20:31:46,562 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 20:38:14,642 - __main__ - INFO - Starting brochure generation task task_1735312094 for The Create A Brochure For The Grand Palace Hotel In Paris Featuring Luxury Suites
+2024-12-27 20:38:33,187 - __main__ - ERROR - Error in task task_1735312094: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 20:42:43,896 - uvicorn.error - INFO - Shutting down
+2024-12-27 20:42:44,009 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 20:42:44,010 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 20:42:44,010 - uvicorn.error - INFO - Finished server process [25108]
+2024-12-27 20:43:04,341 - uvicorn.error - INFO - Started server process [26268]
+2024-12-27 20:43:04,342 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 20:43:04,342 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 20:43:04,343 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 20:43:56,686 - __main__ - INFO - Starting brochure generation task task_1735312436 for The Grand Meridian Resort
+2024-12-27 20:50:17,272 - __main__ - INFO - Starting brochure generation task task_1735312817 for The Grand Meridian Resort
+2024-12-27 20:56:29,218 - __main__ - INFO - Starting brochure generation task task_1735313189 for The Grand Meridian Resort
+2024-12-27 20:56:59,745 - __main__ - ERROR - Error in task task_1735313189: [Errno 13] Permission denied: 'generated_brochures/Grand Meridian Resort_full_bleed_brochure.pdf'
+2024-12-27 20:59:20,725 - __main__ - INFO - Starting brochure generation task task_1735313360 for The Grand Meredian Resort
+2024-12-27 21:05:13,777 - __main__ - INFO - Starting brochure generation task task_1735313713 for The Grand Meridian Resort
+2024-12-27 21:09:53,804 - __main__ - INFO - Starting brochure generation task task_1735313993 for Azure Paradise Resort
+2024-12-27 21:14:22,469 - __main__ - INFO - Starting brochure generation task task_1735314262 for Azure Paradise Resort
+2024-12-27 21:17:50,942 - __main__ - INFO - Starting brochure generation task task_1735314470 for Azure Paradise Resort
+2024-12-27 21:21:24,687 - uvicorn.error - INFO - Shutting down
+2024-12-27 21:21:24,796 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 21:21:24,797 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 21:21:24,798 - uvicorn.error - INFO - Finished server process [26268]
+2024-12-27 21:21:43,472 - uvicorn.error - INFO - Started server process [25336]
+2024-12-27 21:21:43,473 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 21:21:43,473 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 21:21:43,474 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 21:24:55,935 - uvicorn.error - INFO - Started server process [4240]
+2024-12-27 21:24:55,937 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 21:24:55,937 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 21:24:55,938 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 21:25:31,547 - __main__ - INFO - Starting brochure generation task task_1735314931 for Azure Paradise Resort
+2024-12-27 21:25:52,875 - __main__ - ERROR - Error in brochure generation task task_1735314931: Failed to generate brochure: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 21:27:08,231 - __main__ - INFO - Starting brochure generation task task_1735315028 for Azure Paradise Resort
+2024-12-27 21:27:38,542 - __main__ - ERROR - Error in brochure generation task task_1735315028: Failed to generate brochure: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 21:35:20,399 - __main__ - INFO - Starting brochure generation task task_1735315520 for Azure Paradise resort
+2024-12-27 21:35:59,203 - __main__ - ERROR - Error in brochure generation task task_1735315520: Failed to generate brochure: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 21:38:44,721 - uvicorn.error - INFO - Started server process [27196]
+2024-12-27 21:38:44,721 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 21:38:44,721 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 21:38:44,722 - uvicorn.error - ERROR - [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8004): only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-27 21:38:44,722 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 21:38:44,722 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 21:39:17,645 - __main__ - INFO - Starting brochure generation task task_1735315757 for Azure Paradise Resort
+2024-12-27 21:39:52,386 - __main__ - ERROR - Error in brochure generation task task_1735315757: Failed to generate brochure: 'SinglePageBrochureGenerator' object has no attribute '_generate_image'
+2024-12-27 21:40:51,084 - uvicorn.error - INFO - Shutting down
+2024-12-27 21:40:51,192 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 21:40:51,193 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 21:40:51,193 - uvicorn.error - INFO - Finished server process [4240]
+2024-12-27 21:41:12,606 - uvicorn.error - INFO - Started server process [22392]
+2024-12-27 21:41:12,608 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 21:41:12,608 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 21:41:12,609 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 21:44:28,580 - __main__ - ERROR - Error in generate_brochure: SinglePageBrochureGenerator.__init__() got an unexpected keyword argument 'custom_prompts'
+2024-12-27 21:45:58,825 - __main__ - ERROR - Error in generate_brochure: SinglePageBrochureGenerator.__init__() got an unexpected keyword argument 'custom_prompts'
+2024-12-27 21:47:24,258 - __main__ - ERROR - Error in generate_brochure: SinglePageBrochureGenerator.__init__() got an unexpected keyword argument 'custom_prompts'
+2024-12-27 21:48:50,055 - __main__ - ERROR - Error in generate_brochure: SinglePageBrochureGenerator.__init__() got an unexpected keyword argument 'custom_prompts'
+2024-12-27 21:50:56,343 - __main__ - ERROR - Error in generate_brochure: SinglePageBrochureGenerator.__init__() got an unexpected keyword argument 'custom_prompts'
+2024-12-27 21:55:16,177 - uvicorn.error - INFO - Shutting down
+2024-12-27 21:55:16,285 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 21:55:16,285 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 21:55:16,287 - uvicorn.error - INFO - Finished server process [22392]
+2024-12-27 21:55:32,016 - uvicorn.error - INFO - Started server process [11040]
+2024-12-27 21:55:32,017 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 21:55:32,017 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 21:55:32,018 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 21:56:21,323 - __main__ - INFO - Starting brochure generation task task_1735316781 for Azure Paradise Resort
+2024-12-27 21:56:21,634 - __main__ - ERROR - Error in task task_1735316781: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2024-12-27 21:58:22,251 - uvicorn.error - INFO - Shutting down
+2024-12-27 21:58:22,362 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 21:58:22,363 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 21:58:22,364 - uvicorn.error - INFO - Finished server process [11040]
+2024-12-27 21:58:28,532 - uvicorn.error - INFO - Started server process [27436]
+2024-12-27 21:58:28,534 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 21:58:28,534 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 21:58:28,535 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8004 (Press CTRL+C to quit)
+2024-12-27 21:59:15,361 - __main__ - INFO - Starting brochure generation task task_1735316955 for Azure Paradise Resort
+2024-12-27 22:00:00,970 - __main__ - ERROR - Error in task task_1735316955: [Errno 13] Permission denied: 'generated_brochures/Azure Paradise Resort_full_bleed_brochure.pdf'
+2024-12-27 22:01:26,866 - uvicorn.error - INFO - Shutting down
+2024-12-27 22:01:26,973 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 22:01:26,975 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 22:01:26,975 - uvicorn.error - INFO - Finished server process [27436]
+2024-12-27 22:04:59,550 - uvicorn.error - INFO - Started server process [28664]
+2024-12-27 22:04:59,553 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 22:04:59,553 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 22:04:59,554 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-27 22:06:43,053 - __main__ - INFO - Starting brochure generation task task_1735317403 for Azure Paradise Resort
+2024-12-27 22:07:07,245 - __main__ - ERROR - Error in task task_1735317403: [Errno 13] Permission denied: 'generated_brochures/Azure Paradise Resort_full_bleed_brochure.pdf'
+2024-12-27 22:12:17,632 - uvicorn.error - INFO - Started server process [28140]
+2024-12-27 22:12:17,632 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 22:12:17,633 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 22:12:27,117 - __main__ - INFO - Starting brochure generation task task_1735317747 for Azure Paradise Resort
+2024-12-27 22:12:53,936 - __main__ - ERROR - Error in task task_1735317747: [Errno 13] Permission denied: 'generated_brochures/Azure Paradise Resort_full_bleed_brochure.pdf'
+2024-12-27 22:13:49,648 - uvicorn.error - INFO - Started server process [28696]
+2024-12-27 22:13:49,649 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 22:13:49,649 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 22:13:55,533 - uvicorn.error - INFO - Shutting down
+2024-12-27 22:13:55,641 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 22:13:55,641 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 22:13:55,641 - uvicorn.error - INFO - Finished server process [28664]
+2024-12-27 22:14:13,459 - uvicorn.error - INFO - Started server process [26636]
+2024-12-27 22:14:13,459 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 22:14:13,459 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 22:14:54,529 - uvicorn.error - INFO - Started server process [27992]
+2024-12-27 22:14:54,530 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 22:14:54,530 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 22:14:54,530 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8006 (Press CTRL+C to quit)
+2024-12-27 22:15:50,432 - uvicorn.error - INFO - Started server process [15232]
+2024-12-27 22:15:50,433 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 22:15:50,433 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 22:15:50,434 - uvicorn.error - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8006): only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-27 22:15:50,434 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 22:15:50,434 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 22:25:01,599 - __main__ - INFO - Starting brochure generation task task_1735318501598411 for Azure Paradise Resort
+2024-12-27 22:25:28,951 - __main__ - ERROR - Error in task task_1735318501598411: [Errno 13] Permission denied: 'generated_brochures/Azure Paradise Resort_full_bleed_brochure.pdf'
+2024-12-27 22:25:28,957 - __main__ - ERROR - Error starting brochure generation: a coroutine was expected, got None
+2024-12-27 22:25:28,959 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "d:\AI-brochure-generation\api\brochure_api.py", line 65, in generate_brochure
+    "status": "completed",
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pydantic\main.py", line 406, in __init__
+    raise validation_error
+pydantic.error_wrappers.ValidationError: 2 validation errors for ErrorResponse
+detail
+  field required (type=value_error.missing)
+status_code
+  field required (type=value_error.missing)
+2024-12-27 22:27:30,263 - __main__ - INFO - Starting brochure generation task task_1735318650263043 for Azure Paradise Resort
+2024-12-27 22:27:57,060 - __main__ - ERROR - Error in task task_1735318650263043: [Errno 13] Permission denied: 'generated_brochures/Azure Paradise Resort_full_bleed_brochure.pdf'
+2024-12-27 22:27:57,065 - __main__ - ERROR - Error starting brochure generation: a coroutine was expected, got None
+2024-12-27 22:27:57,066 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "d:\AI-brochure-generation\api\brochure_api.py", line 65, in generate_brochure
+    brochure_path = os.path.join("generated_brochures", brochure_filename)
+  File "C:\Users\Aditi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pydantic\main.py", line 406, in __init__
+    raise validation_error
+pydantic.error_wrappers.ValidationError: 2 validation errors for ErrorResponse
+detail
+  field required (type=value_error.missing)
+status_code
+  field required (type=value_error.missing)
+2024-12-27 23:16:51,597 - uvicorn.error - INFO - Started server process [4968]
+2024-12-27 23:16:51,597 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:16:51,597 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:18:31,242 - uvicorn.error - INFO - Started server process [6372]
+2024-12-27 23:18:31,244 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:18:31,245 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:18:31,246 - uvicorn.error - ERROR - [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8006): only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-27 23:18:31,246 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 23:18:31,246 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 23:21:57,595 - uvicorn.error - INFO - Started server process [23256]
+2024-12-27 23:21:57,598 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:21:57,598 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:21:57,598 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-27 23:26:23,976 - __main__ - INFO - Starting brochure generation task task_1735322183 for Azure Paradise Resort
+2024-12-27 23:27:57,059 - __main__ - INFO - Starting brochure generation task task_1735322277 for Skyline Grand Hotel
+2024-12-27 23:31:08,435 - uvicorn.error - INFO - Started server process [28496]
+2024-12-27 23:31:08,435 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:31:08,436 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:32:03,614 - __main__ - INFO - Starting brochure generation task task_1735322523 for Skyline Grand Hotel
+2024-12-27 23:32:27,638 - __main__ - ERROR - Error in task task_1735322523: [Errno 13] Permission denied: 'generated_brochures/Skyline Grand Hotel_full_bleed_brochure.pdf'
+2024-12-27 23:32:44,443 - uvicorn.error - INFO - Shutting down
+2024-12-27 23:32:44,551 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 23:32:44,552 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 23:32:44,553 - uvicorn.error - INFO - Finished server process [23256]
+2024-12-27 23:33:17,734 - uvicorn.error - INFO - Started server process [7920]
+2024-12-27 23:33:17,735 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:33:17,735 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:33:38,558 - uvicorn.error - INFO - Started server process [23032]
+2024-12-27 23:33:38,560 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:33:38,561 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:33:38,562 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-27 23:34:11,723 - __main__ - INFO - Starting brochure generation task task_1735322651 for Skyline Grand Hotel
+2024-12-27 23:34:37,207 - __main__ - ERROR - Error in task task_1735322651: [Errno 13] Permission denied: 'generated_brochures/Skyline Grand Hotel_full_bleed_brochure.pdf'
+2024-12-27 23:35:50,368 - uvicorn.error - INFO - Started server process [2804]
+2024-12-27 23:35:50,368 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:35:50,368 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:35:56,895 - __main__ - INFO - Starting brochure generation task task_1735322756 for Skyline Grand Hotel
+2024-12-27 23:36:20,775 - __main__ - ERROR - Error in task task_1735322756: [Errno 13] Permission denied: 'generated_brochures/Skyline Grand Hotel_full_bleed_brochure.pdf'
+2024-12-27 23:36:24,368 - uvicorn.error - INFO - Shutting down
+2024-12-27 23:36:24,475 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 23:36:24,476 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 23:36:24,476 - uvicorn.error - INFO - Finished server process [23032]
+2024-12-27 23:36:40,221 - uvicorn.error - INFO - Started server process [16624]
+2024-12-27 23:36:40,221 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:36:40,221 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:36:48,379 - uvicorn.error - INFO - Started server process [18800]
+2024-12-27 23:36:48,381 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:36:48,381 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:36:48,381 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-27 23:37:21,420 - __main__ - INFO - Starting brochure generation task task_1735322841 for Skyline Grand Hotel
+2024-12-27 23:37:45,807 - __main__ - ERROR - Error in task task_1735322841: [Errno 13] Permission denied: 'generated_brochures/Skyline Grand Hotel_full_bleed_brochure.pdf'
+2024-12-27 23:38:17,083 - uvicorn.error - INFO - Shutting down
+2024-12-27 23:38:17,190 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 23:38:17,191 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 23:38:17,191 - uvicorn.error - INFO - Finished server process [18800]
+2024-12-27 23:39:39,836 - uvicorn.error - INFO - Started server process [8400]
+2024-12-27 23:39:39,839 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:39:39,839 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:39:39,840 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-27 23:40:13,739 - __main__ - INFO - Starting brochure generation task task_1735323013 for Skyline Grand Hotel
+2024-12-27 23:40:38,257 - __main__ - ERROR - Error in task task_1735323013: [Errno 13] Permission denied: 'generated_brochures/Skyline Grand Hotel_full_bleed_brochure.pdf'
+2024-12-27 23:40:44,185 - uvicorn.error - INFO - Shutting down
+2024-12-27 23:40:44,293 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 23:40:44,293 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 23:40:44,293 - uvicorn.error - INFO - Finished server process [8400]
+2024-12-27 23:42:41,782 - uvicorn.error - INFO - Started server process [2024]
+2024-12-27 23:42:41,784 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:42:41,784 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:42:41,785 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-27 23:44:38,970 - uvicorn.error - INFO - Started server process [14916]
+2024-12-27 23:44:38,970 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:44:38,970 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:44:55,914 - uvicorn.error - INFO - Shutting down
+2024-12-27 23:44:56,023 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-27 23:44:56,023 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-27 23:44:56,023 - uvicorn.error - INFO - Finished server process [2024]
+2024-12-27 23:45:09,150 - uvicorn.error - INFO - Started server process [4344]
+2024-12-27 23:45:09,152 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:45:09,152 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:45:09,153 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-27 23:45:35,285 - __main__ - INFO - Starting brochure generation task task_1735323335 for Azure Paradise Resort
+2024-12-27 23:49:48,189 - uvicorn.error - INFO - Started server process [28156]
+2024-12-27 23:49:48,190 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:49:48,190 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:52:28,941 - uvicorn.error - INFO - Started server process [4672]
+2024-12-27 23:52:28,941 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:52:28,942 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:56:19,220 - uvicorn.error - INFO - Started server process [17720]
+2024-12-27 23:56:19,221 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:56:19,221 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:56:35,689 - uvicorn.error - INFO - Started server process [27872]
+2024-12-27 23:56:35,689 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:56:35,689 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:56:49,894 - uvicorn.error - INFO - Started server process [23532]
+2024-12-27 23:56:49,894 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:56:49,895 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:58:16,276 - uvicorn.error - INFO - Started server process [11376]
+2024-12-27 23:58:16,277 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:58:16,277 - uvicorn.error - INFO - Application startup complete.
+2024-12-27 23:58:42,500 - uvicorn.error - INFO - Started server process [3212]
+2024-12-27 23:58:42,500 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-27 23:58:42,500 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:00:34,758 - uvicorn.error - INFO - Started server process [18036]
+2024-12-28 00:00:34,758 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 00:00:34,758 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:02:37,263 - uvicorn.error - INFO - Started server process [24368]
+2024-12-28 00:02:37,264 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 00:02:37,264 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:03:24,657 - uvicorn.error - INFO - Started server process [5024]
+2024-12-28 00:03:24,657 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 00:03:24,657 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:07:12,876 - uvicorn.error - INFO - Started server process [22676]
+2024-12-28 00:07:12,876 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 00:07:12,876 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:12:54,871 - uvicorn.error - INFO - Started server process [14960]
+2024-12-28 00:12:54,872 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 00:12:54,872 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:15:37,594 - uvicorn.error - INFO - Started server process [29312]
+2024-12-28 00:15:37,594 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 00:15:37,594 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:20:21,264 - uvicorn.error - INFO - Started server process [29324]
+2024-12-28 00:20:21,264 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 00:20:21,265 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:22:01,570 - uvicorn.error - INFO - Started server process [18244]
+2024-12-28 00:22:01,570 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 00:22:01,570 - uvicorn.error - INFO - Application startup complete.
