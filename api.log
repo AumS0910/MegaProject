@@ -591,3 +591,221 @@ status_code
 2024-12-28 00:22:01,570 - uvicorn.error - INFO - Started server process [18244]
 2024-12-28 00:22:01,570 - uvicorn.error - INFO - Waiting for application startup.
 2024-12-28 00:22:01,570 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 00:30:34,265 - uvicorn.error - INFO - Shutting down
+2024-12-28 00:30:34,375 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 00:30:34,375 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 00:30:34,375 - uvicorn.error - INFO - Finished server process [4344]
+2024-12-28 12:40:35,258 - uvicorn.error - INFO - Started server process [3460]
+2024-12-28 12:40:35,284 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 12:40:35,284 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 12:40:35,285 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 12:51:29,670 - __main__ - INFO - Starting brochure generation task task_1735370489
+2024-12-28 12:51:40,406 - __main__ - ERROR - Error in generate_brochure_task: SinglePageBrochureGenerator.generate_brochure() got an unexpected keyword argument 'layout_style'
+2024-12-28 12:54:34,452 - __main__ - INFO - Starting brochure generation task task_1735370674
+2024-12-28 12:54:39,565 - __main__ - ERROR - Error in generate_brochure_task: SinglePageBrochureGenerator.generate_brochure() got an unexpected keyword argument 'layout_style'
+2024-12-28 13:26:28,344 - __main__ - INFO - Starting brochure generation task task_1735372588
+2024-12-28 13:26:31,937 - __main__ - ERROR - Error in generate_brochure_task: SinglePageBrochureGenerator.generate_brochure() got an unexpected keyword argument 'layout_style'
+2024-12-28 13:28:49,898 - __main__ - INFO - Starting brochure generation task task_1735372729
+2024-12-28 13:28:56,175 - __main__ - ERROR - Error in generate_brochure_task: SinglePageBrochureGenerator.generate_brochure() got an unexpected keyword argument 'layout_style'
+2024-12-28 13:30:09,432 - __main__ - INFO - Starting brochure generation task task_1735372809
+2024-12-28 13:30:14,228 - __main__ - ERROR - Error in generate_brochure_task: SinglePageBrochureGenerator.generate_brochure() got an unexpected keyword argument 'layout_style'
+2024-12-28 13:31:31,686 - __main__ - INFO - Starting brochure generation task task_1735372891
+2024-12-28 13:31:37,342 - __main__ - ERROR - Error in generate_brochure_task: SinglePageBrochureGenerator.generate_brochure() got an unexpected keyword argument 'layout_style'
+2024-12-28 13:32:59,943 - uvicorn.error - INFO - Shutting down
+2024-12-28 13:33:00,049 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 13:33:00,052 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 13:33:00,052 - uvicorn.error - INFO - Finished server process [3460]
+2024-12-28 13:33:54,300 - uvicorn.error - INFO - Started server process [18936]
+2024-12-28 13:33:54,302 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 13:33:54,302 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 13:33:54,303 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 13:33:58,352 - __main__ - INFO - Starting brochure generation task task_1735373038 for Mountain Serenity Inn
+2024-12-28 13:34:07,569 - __main__ - ERROR - Error in task task_1735373038: [Errno 2] No such file or directory: 'generated_images/Mountain Serenity Inn_exterior.png'
+2024-12-28 13:34:53,730 - __main__ - INFO - Starting brochure generation task task_1735373093 for Mountain Serenity Inn
+2024-12-28 13:37:41,069 - __main__ - INFO - Starting brochure generation task task_1735373261 for Mountain Serenity Inn
+2024-12-28 13:38:04,756 - __main__ - ERROR - Error in task task_1735373261: [Errno 13] Permission denied: 'generated_brochures/Mountain Serenity Inn_full_bleed_brochure.pdf'
+2024-12-28 13:38:23,895 - __main__ - INFO - Starting brochure generation task task_1735373303 for Mountain Serenity Inn
+2024-12-28 13:38:49,361 - __main__ - ERROR - Error in task task_1735373303: [Errno 13] Permission denied: 'generated_brochures/Mountain Serenity Inn_full_bleed_brochure.pdf'
+2024-12-28 13:40:20,894 - __main__ - INFO - Starting brochure generation task task_1735373420 for Skyzone
+2024-12-28 13:42:28,837 - __main__ - INFO - Starting brochure generation task task_1735373548 for Skyzone
+2024-12-28 14:53:05,287 - uvicorn.error - INFO - Shutting down
+2024-12-28 14:53:05,394 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 14:53:05,395 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 14:53:05,396 - uvicorn.error - INFO - Finished server process [18936]
+2024-12-28 14:53:29,256 - uvicorn.error - INFO - Started server process [25604]
+2024-12-28 14:53:29,257 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 14:53:29,258 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 14:53:29,259 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 14:54:47,010 - uvicorn.error - INFO - Shutting down
+2024-12-28 14:54:47,117 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 14:54:47,118 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 14:54:47,118 - uvicorn.error - INFO - Finished server process [25604]
+2024-12-28 14:55:46,805 - uvicorn.error - INFO - Started server process [16280]
+2024-12-28 14:55:46,807 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 14:55:46,807 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 14:55:46,808 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 15:06:23,339 - uvicorn.error - INFO - Shutting down
+2024-12-28 15:06:23,448 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 15:06:23,449 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 15:06:23,449 - uvicorn.error - INFO - Finished server process [16280]
+2024-12-28 15:06:42,615 - uvicorn.error - INFO - Started server process [26988]
+2024-12-28 15:06:42,617 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 15:06:42,617 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 15:06:42,618 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 15:08:13,696 - __main__ - ERROR - Error generating brochure: [Errno 13] Permission denied: 'generated_brochures/Serenity Bay Resort_full_bleed_brochure.pdf'
+2024-12-28 15:10:26,766 - __main__ - ERROR - Error generating brochure: [Errno 13] Permission denied: 'generated_brochures/Serenity Bay Resort_full_bleed_brochure.pdf'
+2024-12-28 15:10:32,192 - uvicorn.error - INFO - Shutting down
+2024-12-28 15:10:32,298 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 15:10:32,303 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 15:10:32,309 - uvicorn.error - INFO - Finished server process [26988]
+2024-12-28 15:11:34,083 - uvicorn.error - INFO - Started server process [22192]
+2024-12-28 15:11:34,084 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 15:11:34,084 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 15:11:34,085 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 15:14:43,966 - uvicorn.error - INFO - Shutting down
+2024-12-28 15:14:44,076 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 15:14:44,077 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 15:14:44,078 - uvicorn.error - INFO - Finished server process [22192]
+2024-12-28 15:15:03,298 - uvicorn.error - INFO - Started server process [24672]
+2024-12-28 15:15:03,299 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 15:15:03,300 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 15:15:03,300 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 15:20:48,375 - uvicorn.error - INFO - Shutting down
+2024-12-28 15:20:48,484 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 15:20:48,485 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 15:20:48,486 - uvicorn.error - INFO - Finished server process [24672]
+2024-12-28 15:21:25,733 - uvicorn.error - INFO - Started server process [28632]
+2024-12-28 15:21:25,736 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 15:21:25,736 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 15:21:25,736 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 15:23:22,355 - __main__ - INFO - Starting image generation...
+2024-12-28 15:23:22,375 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:25:49,409 - __main__ - INFO - Starting image generation...
+2024-12-28 15:25:49,432 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:27:21,910 - __main__ - INFO - Starting image generation...
+2024-12-28 15:27:21,929 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:28:58,669 - __main__ - INFO - Starting image generation...
+2024-12-28 15:28:58,692 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:31:27,194 - __main__ - INFO - Starting image generation...
+2024-12-28 15:31:27,203 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:33:26,470 - __main__ - INFO - Starting image generation...
+2024-12-28 15:33:26,494 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:36:43,641 - __main__ - INFO - Starting image generation...
+2024-12-28 15:36:43,662 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:38:19,112 - __main__ - INFO - Starting image generation...
+2024-12-28 15:38:19,132 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:39:57,647 - __main__ - INFO - Starting image generation...
+2024-12-28 15:39:57,668 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:41:22,126 - __main__ - INFO - Starting image generation...
+2024-12-28 15:41:22,145 - __main__ - ERROR - Error generating brochure: Failed to generate images: string indices must be integers
+2024-12-28 15:42:17,115 - uvicorn.error - INFO - Shutting down
+2024-12-28 15:42:17,223 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 15:42:17,224 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 15:42:17,225 - uvicorn.error - INFO - Finished server process [28632]
+2024-12-28 15:43:19,671 - uvicorn.error - INFO - Started server process [27472]
+2024-12-28 15:43:19,673 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 15:43:19,673 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 15:43:19,674 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 15:44:13,904 - uvicorn.error - INFO - Shutting down
+2024-12-28 15:44:14,012 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 15:44:14,012 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 15:44:14,013 - uvicorn.error - INFO - Finished server process [27472]
+2024-12-28 19:46:09,455 - uvicorn.error - INFO - Started server process [3904]
+2024-12-28 19:46:09,474 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 19:46:09,475 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 19:46:09,476 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 19:49:31,221 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 19:49:31,223 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 19:49:31,223 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 19:49:31,224 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 19:49:31,225 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2024-12-28 19:50:07,008 - __main__ - ERROR - Error during image generation: Failed to generate images: Failed to generate images: generated_images/Sunset Paradise Resort_exterior.png, generated_images/Sunset Paradise Resort_room.png, generated_images/Sunset Paradise Resort_restaurant.png
+2024-12-28 19:50:07,011 - __main__ - ERROR - Error type: <class 'Exception'>
+2024-12-28 19:50:07,012 - __main__ - ERROR - Unexpected error: 
+2024-12-28 19:50:07,012 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2024-12-28 19:52:46,684 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 19:52:46,687 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 19:52:46,689 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 19:52:46,690 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 19:52:46,691 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2024-12-28 19:53:16,994 - __main__ - ERROR - Error during image generation: Failed to generate images: Failed to generate images: generated_images/Sunset Paradise Resort_exterior.png, generated_images/Sunset Paradise Resort_room.png, generated_images/Sunset Paradise Resort_restaurant.png
+2024-12-28 19:53:16,994 - __main__ - ERROR - Error type: <class 'Exception'>
+2024-12-28 19:53:16,995 - __main__ - ERROR - Unexpected error: 
+2024-12-28 19:53:16,996 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2024-12-28 19:55:05,468 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 19:55:05,469 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 19:55:05,470 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 19:55:05,471 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 19:55:05,472 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2024-12-28 19:55:38,665 - __main__ - ERROR - Error during image generation: Failed to generate images: Failed to generate images: generated_images/Sunset Paradise Resort_exterior.png, generated_images/Sunset Paradise Resort_room.png, generated_images/Sunset Paradise Resort_restaurant.png
+2024-12-28 19:55:38,666 - __main__ - ERROR - Error type: <class 'Exception'>
+2024-12-28 19:55:38,667 - __main__ - ERROR - Unexpected error: 
+2024-12-28 19:55:38,667 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2024-12-28 20:01:21,180 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 20:01:21,184 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 20:01:21,184 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 20:01:21,185 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 20:01:21,187 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2024-12-28 20:01:47,630 - __main__ - ERROR - Error during image generation: Failed to generate images: Failed to generate images: generated_images/Sunset Paradise Resort_exterior.png, generated_images/Sunset Paradise Resort_room.png, generated_images/Sunset Paradise Resort_restaurant.png
+2024-12-28 20:01:47,630 - __main__ - ERROR - Error type: <class 'Exception'>
+2024-12-28 20:01:47,631 - __main__ - ERROR - Unexpected error: 
+2024-12-28 20:01:47,631 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2024-12-28 20:05:32,223 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 20:05:32,226 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 20:05:32,227 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 20:05:32,227 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 20:05:32,229 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2024-12-28 20:06:02,347 - __main__ - ERROR - Error during image generation: Failed to generate images: Failed to generate images: generated_images/Sunset Paradise Resort_exterior.png, generated_images/Sunset Paradise Resort_room.png, generated_images/Sunset Paradise Resort_restaurant.png
+2024-12-28 20:06:02,347 - __main__ - ERROR - Error type: <class 'Exception'>
+2024-12-28 20:06:02,348 - __main__ - ERROR - Unexpected error: 
+2024-12-28 20:06:02,349 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2024-12-28 20:06:14,540 - uvicorn.error - INFO - Shutting down
+2024-12-28 20:06:14,648 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 20:06:14,648 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 20:06:14,649 - uvicorn.error - INFO - Finished server process [3904]
+2024-12-28 20:06:31,961 - uvicorn.error - INFO - Started server process [23324]
+2024-12-28 20:06:31,963 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 20:06:31,963 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 20:06:31,963 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 20:08:09,197 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 20:08:09,199 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2024-12-28 20:08:09,199 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 20:08:09,199 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 20:08:09,200 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2024-12-28 20:45:23,747 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Caldera Cliffs Resort in Santorini
+2024-12-28 20:45:23,752 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Caldera Cliffs Resort in Santorini
+2024-12-28 20:45:23,752 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 20:45:23,753 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 20:45:23,755 - __main__ - INFO - Match found! Hotel: Caldera Cliffs Resort, Location: Santorini
+2024-12-28 21:00:17,542 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Caldera Cliffs Resort in Santorini
+2024-12-28 21:00:17,543 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Caldera Cliffs Resort in Santorini
+2024-12-28 21:00:17,543 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 21:00:17,545 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 21:00:17,545 - __main__ - INFO - Match found! Hotel: Caldera Cliffs Resort, Location: Santorini
+2024-12-28 21:06:24,251 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Santorini
+2024-12-28 21:06:24,252 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Santorini
+2024-12-28 21:06:24,253 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 21:06:24,254 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 21:06:24,254 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Santorini
+2024-12-28 21:26:24,531 - uvicorn.error - INFO - Shutting down
+2024-12-28 21:26:24,640 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 21:26:24,641 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 21:26:24,642 - uvicorn.error - INFO - Finished server process [23324]

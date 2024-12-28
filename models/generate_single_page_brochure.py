@@ -18,7 +18,7 @@ MAX_REQUESTS_PER_WINDOW = 100
 request_timestamps = deque()
 
 class SinglePageBrochureGenerator:
-    def __init__(self, hotel_name, location, layout='centered'):
+    def __init__(self, hotel_name, location, layout='full_bleed'):
         """Initialize the brochure generator with hotel name and location"""
         # Remove any extra 'The' from the hotel name
         if hotel_name.startswith("'The ") or hotel_name.startswith('"The '):
@@ -27,7 +27,7 @@ class SinglePageBrochureGenerator:
             hotel_name = hotel_name[4:]  # Remove 'The ' from the beginning
         self.hotel_name = hotel_name.strip()
         self.location = location
-        self.layout = layout
+        self.layout = 'full_bleed'  # Always use full_bleed layout
         self.width = 1780
         self.height = 2480
         
@@ -74,13 +74,19 @@ class SinglePageBrochureGenerator:
         self.font_small = ImageFont.truetype(self.system_fonts['small'], 24)
         
         # Create directories if they don't exist
-        os.makedirs('generated_images', exist_ok=True)
-        os.makedirs('generated_brochures', exist_ok=True)
+        for directory in ['generated_images', 'generated_brochures']:
+            try:
+                os.makedirs(directory, exist_ok=True)
+            except Exception as e:
+                print(f"Warning: Could not create directory {directory}: {str(e)}")
+                # Continue execution even if directory creation fails
+                pass
         
-        # Define image paths
-        self.exterior_image_path = f'generated_images/{self.hotel_name}_exterior.png'
-        self.room_image_path = f'generated_images/{self.hotel_name}_room.png'
-        self.restaurant_image_path = f'generated_images/{self.hotel_name}_restaurant.png'
+        # Define image paths with consistent separators and space handling
+        safe_hotel_name = self.hotel_name.replace(' ', '_')
+        self.exterior_image_path = f'generated_images/{safe_hotel_name}_exterior.png'
+        self.room_image_path = f'generated_images/{safe_hotel_name}_room.png'
+        self.restaurant_image_path = f'generated_images/{safe_hotel_name}_restaurant.png'
         
         # Generate descriptions using T5 model
         self.generate_descriptions()
@@ -97,8 +103,7 @@ class SinglePageBrochureGenerator:
             'default',
             'modern',
             'classic',
-            'full_bleed',
-            'centered'  # Adding centered layout as valid
+            'full_bleed'
         ]
         
     def generate_descriptions(self):
@@ -417,451 +422,60 @@ class SinglePageBrochureGenerator:
         return background, text, (x, y, bg_width, bg_height)
 
     def generate_brochure(self):
-        # First, generate images using the T5-generated prompts
-        print("\nGenerating images...")
+        """Generate the brochure"""
+        width = self.width
+        height = self.height
         
-        # Set image paths
-        self.exterior_image_path = f"generated_images/{self.hotel_name}_exterior.png"
-        self.room_image_path = f"generated_images/{self.hotel_name}_room.png"
-        self.restaurant_image_path = f"generated_images/{self.hotel_name}_restaurant.png"
+        # Create output directories if they don't exist
+        for directory in ['generated_images', 'generated_brochures']:
+            try:
+                os.makedirs(directory, exist_ok=True)
+            except Exception as e:
+                print(f"Warning: Could not create directory {directory}: {str(e)}")
+                # Continue execution even if directory creation fails
+                pass
         
-        # Generate images using test function with T5-generated prompts
-        test_image_generation(self.hotel_name, self.location, self.custom_prompts)
-        
-        # Create a new image with a white background
-        width = 1780
-        height = 2480
-        brochure = Image.new('RGB', (width, height), 'white')
-        draw = ImageDraw.Draw(brochure)
-
-        # Load and enhance images
-        exterior_img = Image.open(f'generated_images/{self.hotel_name}_exterior.png').convert('RGB')
-        room_img = Image.open(f'generated_images/{self.hotel_name}_room.png').convert('RGB')
-        restaurant_img = Image.open(f'generated_images/{self.hotel_name}_restaurant.png').convert('RGB')
-
-        # Apply layout based on template
+        # Generate brochure based on layout
         if self.layout == 'default':
-            # Create default layout
-            # Main image takes up top portion with diagonal cut
-            exterior_img = exterior_img.resize((width, int(height * 0.6)))
-            brochure.paste(exterior_img, (0, 0))
-            
-            # Create diagonal overlay
-            overlay = Image.new('RGBA', (width, height), (0, 0, 0, 0))
-            overlay_draw = ImageDraw.Draw(overlay)
-            points = [(0, height), (width, int(height * 0.6)), (width, height)]
-            overlay_draw.polygon(points, fill=self.colors['secondary'])
-            
-            # Merge overlay
-            brochure = Image.alpha_composite(brochure.convert('RGBA'), overlay).convert('RGB')
-            draw = ImageDraw.Draw(brochure)
-
-            # Add title text
-            title_y = int(height * 0.65)
-            draw.text((100, title_y), "ABOUT", font=self.font_heading, fill=self.colors['primary'])
-            draw.text((100, title_y + 80), self.hotel_name.upper(), font=self.font_title, fill=self.colors['primary'])
-            
-            # Add description
-            desc_y = title_y + 300
-            desc_text = self.descriptions.get('overview', '')
-            self.add_text_to_image(draw, desc_text, (100, desc_y), self.font_text, max_width=50, color=self.colors['primary'])
-
-            # Add contact information
-            contact_y = height - 200
-            draw.text((100, contact_y), "Contact Us", font=self.font_heading, fill=self.colors['primary'])
-            draw.text((100, contact_y + 50), "Phone: +1-234-567-8900", font=self.font_text, fill=self.colors['primary'])
-            draw.text((100, contact_y + 90), f"Email: {self.contact_email}", 
-                     font=self.font_text, fill=self.colors['primary'])
-
+            brochure = self.generate_default_layout(width, height)
         elif self.layout == 'modern':
-            # Create modern layout
-            col_width = int(width / 3)
-            
-            # Resize and place images
-            for idx, img in enumerate([exterior_img, room_img, restaurant_img]):
-                img = img.resize((col_width, int(height * 0.4)))
-                brochure.paste(img, (idx * col_width, 0))
-            
-            # Add colored sections below images
-            for idx, title in enumerate(["SERENE SEA VIEWS", "PRIVATE VILLAS", "ON-SAND ENTERTAINMENT"]):
-                rect_top = int(height * 0.4)
-                overlay_draw = ImageDraw.Draw(brochure)
-                overlay_draw.rectangle(
-                    [(idx * col_width, rect_top), ((idx + 1) * col_width, height)],
-                    fill=self.colors['secondary'] if idx % 2 == 0 else self.colors['primary']
-                )
-                
-                # Add titles and descriptions
-                title_y = rect_top + 50
-                desc_y = title_y + 100
-                draw.text((idx * col_width + 50, title_y), title, font=self.font_heading, fill=self.colors['primary'])
-                desc_text = self.descriptions.get(['exterior', 'room', 'restaurant'][idx], '')
-                self.add_text_to_image(draw, desc_text, (idx * col_width + 50, desc_y), 
-                                     self.font_text, max_width=25, color=self.colors['primary'])
-
+            brochure = self.generate_modern_layout(width, height)
         elif self.layout == 'classic':
-            # Create classic layout
-            main_height = int(height * 0.6)
-            side_width = int(width * 0.4)
-            
-            # Main image
-            exterior_img = exterior_img.resize((width - side_width, main_height))
-            brochure.paste(exterior_img, (0, 0))
-            
-            # Side images
-            room_img = room_img.resize((side_width, int(main_height/2)))
-            restaurant_img = restaurant_img.resize((side_width, int(main_height/2)))
-            brochure.paste(room_img, (width - side_width, 0))
-            brochure.paste(restaurant_img, (width - side_width, int(main_height/2)))
-            
-            # Add text section at bottom
-            text_top = main_height
-            overlay_draw = ImageDraw.Draw(brochure)
-            overlay_draw.rectangle([(0, text_top), (width, height)], fill=self.colors['secondary'])
-            
-            # Add content
-            title_y = text_top + 50
-            draw.text((100, title_y), self.hotel_name.upper(), font=self.font_title, fill=self.colors['primary'])
-            desc_y = title_y + 150
-            desc_text = self.descriptions.get('exterior', '')
-            self.add_text_to_image(draw, desc_text, (100, desc_y), self.font_text, max_width=80, color=self.colors['primary'])
-
+            brochure = self.generate_classic_layout(width, height)
         elif self.layout == 'full_bleed':
             brochure = self.generate_full_bleed_layout(width, height)
-        
-        elif self.layout == 'centered':
-            brochure = self.generate_centered_layout(width, height)
-        
         else:
-            print("Invalid layout. Please choose from 'default', 'modern', 'classic', 'full_bleed', or 'centered'.")
+            print("Invalid layout. Please choose from 'default', 'modern', 'classic', or 'full_bleed'.")
+            return None
 
-        # Save the brochure
-        os.makedirs('generated_brochures', exist_ok=True)
-        brochure_path = f'generated_brochures/{self.hotel_name}_{self.layout}_brochure.pdf'
+        # Save the brochure with proper error handling
+        try:
+            brochure_path = f'generated_brochures/{self.hotel_name}_{self.layout}_brochure.pdf'
+            
+            # Convert PIL Image to PDF
+            img_byte_arr = io.BytesIO()
+            brochure.save(img_byte_arr, format='PNG')
+            img_byte_arr = img_byte_arr.getvalue()
+            
+            # Try to save the PDF
+            try:
+                c = canvas.Canvas(brochure_path, pagesize=(width, height))
+                c.drawImage(ImageReader(io.BytesIO(img_byte_arr)), 0, 0, width, height)
+                c.save()
+                print(f"\nBrochure saved as: {brochure_path}")
+            except Exception as e:
+                # If saving to PDF fails, try saving as PNG instead
+                fallback_path = f'generated_brochures/{self.hotel_name}_{self.layout}_brochure.png'
+                brochure.save(fallback_path, 'PNG')
+                print(f"\nCould not save as PDF due to permissions. Saved as PNG instead: {fallback_path}")
+            
+            return brochure
+            
+        except Exception as e:
+            print(f"Error saving brochure: {str(e)}")
+            return None
         
-        # Convert PIL Image to PDF
-        img_byte_arr = io.BytesIO()
-        brochure.save(img_byte_arr, format='PNG')
-        img_byte_arr = img_byte_arr.getvalue()
-        
-        # Create PDF
-        c = canvas.Canvas(brochure_path, pagesize=(self.width, self.height))
-        c.drawImage(ImageReader(io.BytesIO(img_byte_arr)), 0, 0, self.width, self.height)
-        c.save()
-        
-        print(f"\nBrochure saved as: {brochure_path}")
-        return brochure
-
     def generate_full_bleed_layout(self, width, height):
-        # Create a new image with a white background
-        image = Image.new('RGBA', (self.width, self.height), 'white')
-        draw = ImageDraw.Draw(image)
-        
-        # Add the main image as background
-        if os.path.exists(self.exterior_image_path):
-            bg_image = Image.open(self.exterior_image_path)
-            bg_image = bg_image.resize((self.width, self.height), Image.Resampling.LANCZOS)
-            image.paste(bg_image, (0, 0))
-            
-            # Add a darker gradient overlay for better text readability
-            gradient = Image.new('RGBA', (self.width, self.height))
-            gradient_draw = ImageDraw.Draw(gradient)
-            for y in range(self.height):
-                alpha = int(80 + (y / self.height) * 120)  # Increased opacity
-                gradient_draw.line([(0, y), (self.width, y)], 
-                                 fill=(0, 0, 0, alpha))
-            image = Image.alpha_composite(image, gradient)
-            draw = ImageDraw.Draw(image)
-        
-        # Add hotel name with adjusted spacing
-        name_y = self.height // 8  # Moved up higher
-        
-        # Remove any extra 'The' from the display name
-        display_name = self.hotel_name
-        if display_name.startswith("'The "):
-            display_name = display_name[5:-1]  # Remove 'The ' and the quote
-        elif display_name.startswith('"The '):
-            display_name = display_name[5:-1]  # Remove 'The ' and the quote
-        elif display_name.startswith("The "):
-            display_name = display_name[4:]  # Remove 'The ' without quotes
-        
-        # Remove any remaining quotes
-        if display_name.startswith("'") or display_name.startswith('"'):
-            display_name = display_name[1:]
-        if display_name.endswith("'") or display_name.endswith('"'):
-            display_name = display_name[:-1]
-            
-        name_text = display_name.upper()
-        
-        # Adjust font size for title to fit width
-        font_size = 140
-        while True:
-            self.font_title = ImageFont.truetype(self.system_fonts['title'], font_size)
-            name_bbox = self.font_title.getbbox(name_text)
-            if name_bbox[2] - name_bbox[0] <= self.width - 100:  # Leave 50px margin on each side
-                break
-            font_size -= 5
-        
-        name_bbox = self.font_title.getbbox(name_text)
-        name_width = name_bbox[2] - name_bbox[0]
-        name_height = name_bbox[3] - name_bbox[1]
-        name_x = (self.width - name_width) // 2
-        
-        # Add semi-transparent background for title
-        title_padding = 80
-        title_bg = Image.new('RGBA', (name_width + 2*title_padding, name_height + 2*title_padding), (255, 255, 255, 180))
-        image.paste(title_bg, (name_x - title_padding, name_y - title_padding), title_bg)
-        
-        draw.text((name_x, name_y), name_text, 
-                 font=self.font_title, 
-                 fill=(20, 20, 20))
-        
-        # Add location with adjusted spacing
-        location_text = self.location.upper()
-        if location_text.startswith("THE "):
-            location_text = location_text[4:]  # Remove "THE " from the start
-        elif location_text == "THE":  # Remove standalone "THE"
-            location_text = ""
-        
-        # Only proceed with location if we have text
-        if location_text:
-            location_bbox = self.font_heading.getbbox(location_text)
-            location_width = location_bbox[2] - location_bbox[0]
-            location_x = (self.width - location_width) // 2
-            location_y = name_y + name_height + 60  # Reduced spacing between title and location
-            
-            # Create background for location
-            loc_bg = Image.new('RGBA', (location_width + 160, location_bbox[3] + 40), (255, 255, 255, 180))
-            image.paste(loc_bg, (location_x - 80, location_y - 10), loc_bg)
-            draw.text((location_x, location_y), location_text, font=self.font_heading, fill=(20, 20, 20))
-            
-            # Adjust description position based on location
-            desc_y = location_y + location_bbox[3] + 60  # Reduced spacing between location and description
-        else:
-            # If no location, put description closer to title
-            desc_y = name_y + name_height + 90
-        
-        # Add description with adjusted spacing
-        desc_text = self.descriptions.get('overview', 'Experience luxury redefined at our exclusive resort.')
-        
-        # Calculate maximum width for description (60% of total width)
-        max_desc_width = int(self.width * 0.6)
-        
-        # Create dynamic background for main description
-        desc_bg, wrapped_desc, (_, _, bg_width, bg_height) = self.create_text_background(
-            draw,
-            desc_text,
-            self.font_text,
-            0,
-            desc_y,
-            padding_x=60,
-            padding_y=45,
-            wrap_width=40,
-            max_width=max_desc_width
-        )
-        
-        # Center the background horizontally
-        desc_x = (self.width - bg_width) // 2
-        
-        # Paste background and draw text
-        image.paste(desc_bg, (desc_x, desc_y - 20), desc_bg)
-        
-        # Calculate text starting position to center within background
-        text_bbox = self.font_text.getbbox(wrapped_desc.split('\n')[0])  # Get height of first line
-        text_y = desc_y + (bg_height - (text_bbox[3] - text_bbox[1])) // 2 - 20  # Center text vertically
-        
-        # Draw the wrapped text with proper positioning
-        draw.multiline_text((desc_x + 60, text_y), wrapped_desc,
-                          font=self.font_text,
-                          fill=(20, 20, 20),
-                          align='center')
-        
-        # Add room and restaurant images with proper spacing
-        image_width = (self.width - 480) // 2  # Increased margin between images from 360 to 480
-        image_height = int(image_width * 0.6)  # Maintain aspect ratio
-        
-        # Room section
-        room_x = 180
-        room_y = desc_y + bg_height + 120
-        
-        if os.path.exists(self.room_image_path):
-            room_image = Image.open(self.room_image_path)
-            room_image = room_image.resize((image_width, image_height), Image.Resampling.LANCZOS)
-            image.paste(room_image, (room_x, room_y))
-            
-            # Add room description with dynamic background
-            room_desc = self.descriptions.get('room', 'Luxurious rooms with stunning ocean views.')
-            room_desc_bg, wrapped_room_desc, (_, _, room_bg_width, room_bg_height) = self.create_text_background(
-                draw,
-                room_desc,
-                self.font_small,
-                0,
-                0,
-                padding_x=60,  # Increased padding for larger font
-                padding_y=40,  # Increased padding for larger font
-                wrap_width=20,  # Adjusted wrap width for larger font
-                max_width=image_width
-            )
-            
-            # Center the background under the image
-            room_desc_y = room_y + image_height + 20
-            room_desc_x = room_x + (image_width - room_bg_width) // 2
-            
-            # Paste background
-            image.paste(room_desc_bg, (room_desc_x, room_desc_y), room_desc_bg)
-            
-            # Draw text centered within background
-            text_x = room_desc_x + 40
-            text_y = room_desc_y + 25
-            draw.multiline_text((text_x, text_y), wrapped_room_desc,
-                              font=self.font_small,
-                              fill=(20, 20, 20),
-                              align='center')
-            
-            room_desc_height = room_bg_height
-        
-        # Restaurant section with similar adjustments
-        rest_x = self.width - image_width - 180
-        rest_y = room_y
-        
-        if os.path.exists(self.restaurant_image_path):
-            rest_image = Image.open(self.restaurant_image_path)
-            rest_image = rest_image.resize((image_width, image_height), Image.Resampling.LANCZOS)
-            image.paste(rest_image, (rest_x, rest_y))
-            
-            # Add restaurant description with dynamic background
-            rest_desc = self.descriptions.get('dining')
-            if not rest_desc or rest_desc.lower() == self.hotel_name.lower():
-                rest_desc = "Experience world-class dining with local specialties and international cuisine in our signature restaurant."
-            
-            rest_desc_bg, wrapped_rest_desc, (_, _, rest_bg_width, rest_bg_height) = self.create_text_background(
-                draw,
-                rest_desc,
-                self.font_small,
-                0,
-                0,
-                padding_x=60,  # Increased padding for larger font
-                padding_y=40,  # Increased padding for larger font
-                wrap_width=20,  # Adjusted wrap width for larger font
-                max_width=image_width
-            )
-            
-            # Center the background under the image
-            rest_desc_y = rest_y + image_height + 20
-            rest_desc_x = rest_x + (image_width - rest_bg_width) // 2
-            
-            # Paste background
-            image.paste(rest_desc_bg, (rest_desc_x, rest_desc_y), rest_desc_bg)
-            
-            # Draw text centered within background
-            text_x = rest_desc_x + 40
-            text_y = rest_desc_y + 25
-            draw.multiline_text((text_x, text_y), wrapped_rest_desc,
-                              font=self.font_small,
-                              fill=(20, 20, 20),
-                              align='center')
-            
-            rest_desc_height = rest_bg_height
-        
-        # Calculate max description height
-        max_desc_height = max(room_desc_height, rest_desc_height) if 'room_desc_height' in locals() else 0
-        
-        # Add amenities section with adjusted spacing
-        amenities_y = room_y + image_height + max_desc_height + 100
-        amenities_width = int(self.width * 0.9)
-        amenities_x = (self.width - amenities_width) // 2
-        
-        # Draw amenities title
-        amenities_title = "LUXURY AMENITIES"
-        title_font = self.font_heading
-        title_bbox = title_font.getbbox(amenities_title)
-        title_width = title_bbox[2] - title_bbox[0]
-        title_x = (self.width - title_width) // 2
-        
-        # Create background for amenities title
-        title_bg = Image.new('RGBA', (title_width + 160, title_bbox[3] + 40), (255, 255, 255, 180))
-        image.paste(title_bg, (title_x - 80, amenities_y - 10), title_bg)
-        draw.text((title_x, amenities_y), amenities_title, font=title_font, fill=(20, 20, 20))
-        
-        # Adjust amenities layout
-        amenities_start_y = amenities_y + title_bbox[3] + 30
-        
-        # Use the amenities generated by T5 instead of hardcoded list
-        if not hasattr(self, 'amenities') or not self.amenities:
-            self.amenities = [
-                "24/7 Personal Butler Service",
-                "Private Beach & Infinity Pool",
-                "Luxury Yacht Charter",
-                "World-Class Spa & Wellness",
-                "Michelin-Star Dining",
-                "Helicopter Transfer Service"
-            ]
-        
-        # Calculate amenity box dimensions
-        amenity_height = 60
-        amenity_width = (amenities_width - 60) // 2
-        amenity_padding = 20
-        
-        # Create and place amenity boxes in two columns
-        for i, amenity in enumerate(self.amenities):
-            is_right = i % 2
-            row = i // 2
-            
-            # Calculate position
-            x = amenities_x + (amenity_width + 60) * is_right
-            y = amenities_start_y + (amenity_height + 20) * row
-            
-            # Create background
-            amenity_bg = Image.new('RGBA', (amenity_width, amenity_height), (255, 255, 255, 180))
-            image.paste(amenity_bg, (x, y), amenity_bg)
-            
-            # Draw checkbox
-            checkbox_size = 24
-            checkbox_x = x + amenity_padding
-            checkbox_y = y + (amenity_height - checkbox_size) // 2
-            checkbox = Image.new('RGBA', (checkbox_size, checkbox_size), (255, 255, 255, 0))
-            checkbox_draw = ImageDraw.Draw(checkbox)
-            checkbox_draw.rectangle([0, 0, checkbox_size-1, checkbox_size-1], outline=(20, 20, 20), width=2)
-            image.paste(checkbox, (checkbox_x, checkbox_y), checkbox)
-            
-            # Draw text
-            text_x = checkbox_x + checkbox_size + 15
-            text_y = y + (amenity_height - title_bbox[3]) // 2
-            draw.text((text_x, text_y), amenity, font=self.font_text, fill=(20, 20, 20))
-        
-        # Add contact information at the bottom
-        contact_y = self.height - 100
-        contact_text = f"RESERVATIONS: +1 (800) 123-4567  •  {self.contact_email}"
-        contact_bbox = self.font_decorative.getbbox(contact_text)
-        contact_width = contact_bbox[2] - contact_bbox[0]
-        contact_x = (self.width - contact_width) // 2
-        
-        # Add contact background
-        contact_padding = 20
-        contact_bg = Image.new('RGBA', (contact_width + 2*contact_padding, contact_bbox[3] - contact_bbox[1] + 2*contact_padding), (255, 255, 255, 180))
-        image.paste(contact_bg, (contact_x - contact_padding, contact_y - contact_padding), contact_bg)
-        
-        draw.text((contact_x, contact_y), contact_text,
-                 font=self.font_decorative, fill=(20, 20, 20))
-        
-        # Save the brochure
-        os.makedirs('generated_brochures', exist_ok=True)
-        brochure_path = f'generated_brochures/{self.hotel_name}_{self.layout}_brochure.pdf'
-        
-        # Convert PIL Image to PDF
-        img_byte_arr = io.BytesIO()
-        image.save(img_byte_arr, format='PNG')
-        img_byte_arr = img_byte_arr.getvalue()
-        
-        # Create PDF
-        c = canvas.Canvas(brochure_path, pagesize=(self.width, self.height))
-        c.drawImage(ImageReader(io.BytesIO(img_byte_arr)), 0, 0, self.width, self.height)
-        c.save()
-        
-        print(f"\nBrochure saved as: {brochure_path}")
-        return image
-        
-    def generate_centered_layout(self, width, height):
         # Create a new image with a white background
         image = Image.new('RGBA', (self.width, self.height), 'white')
         draw = ImageDraw.Draw(image)
@@ -1180,22 +794,49 @@ class SinglePageBrochureGenerator:
 
     def generate_images(self):
         """Generate images using Stable Diffusion"""
-        print("\nGenerating images...\n")
-        
-        # Generate exterior image
-        print("=== Generating exterior image ===")
-        exterior_prompt = f"Professional architectural photography of {self.hotel_name} in {self.location}, luxury beachfront resort, modern tropical architecture, pristine beach, infinity pools, palm trees, high-end resort photography, 4k, detailed, professional lighting"
-        self.exterior_image_path = self._generate_image(exterior_prompt, "exterior")
-        
-        # Generate room image
-        print("\n=== Generating room image ===")
-        room_prompt = f"Interior photography of a luxury ocean view suite at {self.hotel_name}, {self.location}, modern tropical design, private balcony, ocean views, luxury furnishings, king bed, marble bathroom, professional hotel photography, 4k, detailed"
-        self.room_image_path = self._generate_image(room_prompt, "room")
-        
-        # Generate restaurant image
-        print("\n=== Generating restaurant image ===")
-        restaurant_prompt = f"Fine dining restaurant interior at {self.hotel_name}, {self.location}, luxury beachfront dining, panoramic ocean views, elegant modern decor, ambient lighting, professional restaurant photography, 4k, detailed"
-        self.restaurant_image_path = self._generate_image(restaurant_prompt, "restaurant")
+        try:
+            print("\nStarting image generation...")
+            print(f"Hotel name: {self.hotel_name}")
+            print(f"Location: {self.location}")
+            
+            # Generate images
+            success = test_image_generation(
+                hotel_name=self.hotel_name,
+                location=self.location
+            )
+            
+            if not success:
+                raise Exception("Image generation failed")
+            
+            # Verify all required images exist
+            required_images = [self.exterior_image_path, self.room_image_path, self.restaurant_image_path]
+            print("\nVerifying generated images:")
+            print(f"Looking for images in {os.path.abspath('generated_images')}")
+            print(f"Directory contents:")
+            for f in os.listdir('generated_images'):
+                print(f"  {f}")
+            
+            for img_path in required_images:
+                print(f"\nChecking {img_path}:")
+                if not os.path.exists(img_path):
+                    print(f"  File not found")
+                    raise Exception(f"Image not found: {img_path}")
+                try:
+                    # Try to open the image to verify it's valid
+                    print(f"  File exists, verifying...")
+                    with Image.open(img_path) as img:
+                        img.verify()
+                    print(f"  File is valid")
+                    print(f"  File size: {os.path.getsize(img_path)} bytes")
+                except Exception as e:
+                    print(f"  File verification failed: {str(e)}")
+                    raise Exception(f"Invalid image file {img_path}: {str(e)}")
+            
+            print("Image generation and verification completed successfully")
+                
+        except Exception as e:
+            print(f"Error in generate_images: {str(e)}")
+            raise Exception(str(e))
 
 def main():
     # Parse command line arguments
