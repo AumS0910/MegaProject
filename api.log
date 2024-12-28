@@ -809,3 +809,60 @@ Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resor
 2024-12-28 21:26:24,640 - uvicorn.error - INFO - Waiting for application shutdown.
 2024-12-28 21:26:24,641 - uvicorn.error - INFO - Application shutdown complete.
 2024-12-28 21:26:24,642 - uvicorn.error - INFO - Finished server process [23324]
+2024-12-28 23:15:42,105 - uvicorn.error - INFO - Started server process [15224]
+2024-12-28 23:15:42,106 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-28 23:15:42,106 - uvicorn.error - INFO - Application startup complete.
+2024-12-28 23:15:42,107 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-28 23:19:32,175 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Radisson Blue in Paris
+2024-12-28 23:19:32,178 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Radisson Blue in Paris
+2024-12-28 23:19:32,179 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 23:19:32,179 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 23:19:32,182 - __main__ - INFO - Match found! Hotel: Radisson Blue, Location: Paris
+2024-12-28 23:33:40,373 - __main__ - INFO - 
+Received prompt request: Create a brochure for Sunset Paradise Resort near Sea
+2024-12-28 23:33:40,375 - __main__ - INFO - 
+Extracting hotel info from prompt: Create a brochure for Sunset Paradise Resort near Sea
+2024-12-28 23:33:40,376 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 23:33:40,377 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 23:33:40,377 - __main__ - INFO - Trying pattern 2: (?i)create.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 23:33:40,378 - __main__ - INFO - Trying pattern 3: (?i)make.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 23:33:40,379 - __main__ - INFO - No pattern matched, trying fallback method...
+2024-12-28 23:33:40,379 - __main__ - INFO - Split words: ['Create', 'a', 'brochure', 'for', 'Sunset', 'Paradise', 'Resort', 'near', 'Sea']
+2024-12-28 23:33:40,380 - __main__ - INFO - Processing word 0: Create
+2024-12-28 23:33:40,381 - __main__ - INFO - Processing word 1: a
+2024-12-28 23:33:40,381 - __main__ - INFO - Processing word 2: brochure
+2024-12-28 23:33:40,382 - __main__ - INFO - Processing word 3: for
+2024-12-28 23:33:40,382 - __main__ - INFO - Processing word 4: Sunset
+2024-12-28 23:33:40,383 - __main__ - INFO - Processing word 5: Paradise
+2024-12-28 23:33:40,384 - __main__ - INFO - Processing word 6: Resort
+2024-12-28 23:33:40,385 - __main__ - INFO - Processing word 7: near
+2024-12-28 23:33:40,385 - __main__ - INFO - Processing word 8: Sea
+2024-12-28 23:33:40,385 - __main__ - INFO - Capitalized words: ['Create', 'Sunset', 'Paradise', 'Resort', 'Sea']
+2024-12-28 23:33:40,386 - __main__ - INFO - Location words: []
+2024-12-28 23:33:40,386 - __main__ - INFO - Could not extract hotel information
+2024-12-28 23:33:40,387 - __main__ - ERROR - Error in extract_hotel_info: Could not extract hotel information from prompt
+2024-12-28 23:33:40,387 - __main__ - ERROR - Error type: <class 'ValueError'>
+2024-12-28 23:33:40,388 - __main__ - ERROR - Validation error: Could not understand the prompt. Please try rephrasing it.
+2024-12-28 23:33:40,389 - __main__ - ERROR - Error type: <class 'ValueError'>
+2024-12-28 23:34:16,564 - __main__ - INFO - 
+Received prompt request: Create a brochure for Sunset Paradise Resort in Goa
+2024-12-28 23:34:16,572 - __main__ - INFO - 
+Extracting hotel info from prompt: Create a brochure for Sunset Paradise Resort in Goa
+2024-12-28 23:34:16,575 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 23:34:16,575 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 23:34:16,575 - __main__ - INFO - Trying pattern 2: (?i)create.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 23:34:16,577 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Goa
+2024-12-28 23:35:38,925 - __main__ - INFO - 
+Received prompt request: Create a brochure for Sunset Paradise Resort in Goa
+2024-12-28 23:35:38,926 - __main__ - INFO - 
+Extracting hotel info from prompt: Create a brochure for Sunset Paradise Resort in Goa
+2024-12-28 23:35:38,926 - __main__ - INFO - Trying 3 patterns...
+2024-12-28 23:35:38,927 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 23:35:38,927 - __main__ - INFO - Trying pattern 2: (?i)create.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-28 23:35:38,928 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Goa
+2024-12-28 23:38:06,314 - uvicorn.error - INFO - Shutting down
+2024-12-28 23:38:06,427 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-28 23:38:06,428 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-28 23:38:06,429 - uvicorn.error - INFO - Finished server process [15224]
