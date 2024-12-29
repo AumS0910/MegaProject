@@ -881,3 +881,49 @@ Extracting hotel info from prompt: Generate a brochure for ABC Resort in Bali
 2024-12-29 13:48:43,788 - uvicorn.error - INFO - Waiting for application shutdown.
 2024-12-29 13:48:43,790 - uvicorn.error - INFO - Application shutdown complete.
 2024-12-29 13:48:43,791 - uvicorn.error - INFO - Finished server process [24656]
+2024-12-29 15:12:27,203 - uvicorn.error - INFO - Started server process [5372]
+2024-12-29 15:12:27,204 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-29 15:12:27,205 - uvicorn.error - INFO - Application startup complete.
+2024-12-29 15:12:27,205 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-29 15:13:52,987 - __main__ - INFO - 
+Received prompt request: Generate a brochure for ABC Resort in Bali
+2024-12-29 15:13:52,989 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for ABC Resort in Bali
+2024-12-29 15:13:52,990 - __main__ - INFO - Trying 3 patterns...
+2024-12-29 15:13:52,990 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-29 15:13:52,992 - __main__ - INFO - Match found! Hotel: ABC Resort, Location: Bali
+2024-12-29 15:22:46,257 - uvicorn.error - INFO - Shutting down
+2024-12-29 15:22:46,365 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-29 15:22:46,366 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-29 15:22:46,366 - uvicorn.error - INFO - Finished server process [5372]
+2024-12-29 16:23:38,499 - uvicorn.error - INFO - Started server process [25892]
+2024-12-29 16:23:38,501 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-29 16:23:38,501 - uvicorn.error - INFO - Application startup complete.
+2024-12-29 16:23:38,502 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-29 16:24:43,010 - uvicorn.error - INFO - Shutting down
+2024-12-29 16:24:43,119 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-29 16:24:43,120 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-29 16:24:43,120 - uvicorn.error - INFO - Finished server process [25892]
+2024-12-29 16:24:51,460 - uvicorn.error - INFO - Started server process [16960]
+2024-12-29 16:24:51,464 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-29 16:24:51,464 - uvicorn.error - INFO - Application startup complete.
+2024-12-29 16:24:51,465 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-29 16:26:06,523 - uvicorn.error - INFO - Shutting down
+2024-12-29 16:26:06,630 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-29 16:26:06,631 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-29 16:26:06,632 - uvicorn.error - INFO - Finished server process [16960]
+2024-12-29 16:26:57,517 - uvicorn.error - INFO - Started server process [23024]
+2024-12-29 16:26:57,519 - uvicorn.error - INFO - Waiting for application startup.
+2024-12-29 16:26:57,519 - uvicorn.error - INFO - Application startup complete.
+2024-12-29 16:26:57,519 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2024-12-29 16:29:40,662 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Bali
+2024-12-29 16:29:40,663 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Bali
+2024-12-29 16:29:40,663 - __main__ - INFO - Trying 3 patterns...
+2024-12-29 16:29:40,664 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2024-12-29 16:29:40,666 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Bali
+2024-12-29 16:30:49,257 - uvicorn.error - INFO - Shutting down
+2024-12-29 16:30:49,364 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-12-29 16:30:49,366 - uvicorn.error - INFO - Application shutdown complete.
+2024-12-29 16:30:49,367 - uvicorn.error - INFO - Finished server process [23024]

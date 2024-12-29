@@ -20,6 +20,9 @@ app.add_middleware(
 # Mount the generated_images directory
 app.mount("/images", StaticFiles(directory="generated_images"), name="images")
 
+# Mount the generated_brochures directory
+app.mount("/brochures", StaticFiles(directory="generated_brochures"), name="brochures")
+
 class BrochureRequest(BaseModel):
     prompt: str
 
@@ -43,16 +46,17 @@ async def generate_brochure(request: BrochureRequest):
         # Generate the brochure
         brochure_path = generator.generate_brochure()
         
-        # Get image paths
+        # Get relative paths for frontend
+        brochure_filename = os.path.basename(brochure_path)
         image_paths = {
-            "exterior": f"/images/{hotel_name.replace(' ', '_')}_exterior.png",
-            "room": f"/images/{hotel_name.replace(' ', '_')}_room.png",
-            "restaurant": f"/images/{hotel_name.replace(' ', '_')}_restaurant.png"
+            "exterior": f"{hotel_name.replace(' ', '_')}_exterior.png",
+            "room": f"{hotel_name.replace(' ', '_')}_room.png",
+            "restaurant": f"{hotel_name.replace(' ', '_')}_restaurant.png"
         }
         
         return {
             "status": "completed",
-            "brochure_path": brochure_path,
+            "file_path": brochure_filename,
             "images": image_paths
         }
         
@@ -61,4 +65,4 @@ async def generate_brochure(request: BrochureRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8006)
+    uvicorn.run(app, host="0.0.0.0", port=8007)

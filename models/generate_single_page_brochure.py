@@ -450,7 +450,10 @@ class SinglePageBrochureGenerator:
 
         # Save the brochure with proper error handling
         try:
-            brochure_path = f'generated_brochures/{self.hotel_name}_{self.layout}_brochure.pdf'
+            # Create a URL-safe filename by replacing spaces and special characters
+            safe_hotel_name = self.hotel_name.replace(' ', '_').replace("'", '').replace('"', '').replace(',', '').replace('&', 'and')
+            safe_hotel_name = ''.join(c for c in safe_hotel_name if c.isalnum() or c == '_')
+            brochure_path = f'generated_brochures/{safe_hotel_name}_{self.layout}_brochure.pdf'
             
             # Convert PIL Image to PDF
             img_byte_arr = io.BytesIO()
@@ -465,11 +468,11 @@ class SinglePageBrochureGenerator:
                 print(f"\nBrochure saved as: {brochure_path}")
             except Exception as e:
                 # If saving to PDF fails, try saving as PNG instead
-                fallback_path = f'generated_brochures/{self.hotel_name}_{self.layout}_brochure.png'
+                fallback_path = f'generated_brochures/{safe_hotel_name}_{self.layout}_brochure.png'
                 brochure.save(fallback_path, 'PNG')
                 print(f"\nCould not save as PDF due to permissions. Saved as PNG instead: {fallback_path}")
             
-            return brochure
+            return brochure_path
             
         except Exception as e:
             print(f"Error saving brochure: {str(e)}")
