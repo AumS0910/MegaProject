@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 import os
 import random
-from models.test_image_generation import test_image_generation
+from .test_image_generation import test_image_generation
 import math
 import requests
 import time
@@ -496,7 +496,7 @@ class SinglePageBrochureGenerator:
                 alpha = int(80 + (y / self.height) * 120)  # Increased opacity
                 gradient_draw.line([(0, y), (self.width, y)], 
                                  fill=(0, 0, 0, alpha))
-            image = Image.alpha_composite(image, gradient)
+            image = Image.alpha_composite(image.convert('RGBA'), gradient)
             draw = ImageDraw.Draw(image)
         
         # Add hotel name with adjusted spacing
@@ -567,13 +567,11 @@ class SinglePageBrochureGenerator:
             # If no location, put description closer to title
             desc_y = name_y + name_height + 90
         
-        # Add description with adjusted spacing
+        # Add description with enhanced background
         desc_text = self.descriptions.get('overview', 'Experience luxury redefined at our exclusive resort.')
-        
-        # Calculate maximum width for description (60% of total width)
         max_desc_width = int(self.width * 0.6)
         
-        # Create dynamic background for main description
+        # Create enhanced background for description
         desc_bg, wrapped_desc, (_, _, bg_width, bg_height) = self.create_text_background(
             draw,
             desc_text,
@@ -586,22 +584,28 @@ class SinglePageBrochureGenerator:
             max_width=max_desc_width
         )
         
-        # Center the background horizontally
         desc_x = (self.width - bg_width) // 2
         
-        # Paste background and draw text
-        image.paste(desc_bg, (desc_x, desc_y - 20), desc_bg)
+        # Add enhanced background effect
+        enhanced_desc_bg = self.create_enhanced_text_background(
+            bg_width,
+            bg_height,
+            opacity=150
+        )
+        image.paste(enhanced_desc_bg, (desc_x, desc_y - 20), enhanced_desc_bg)
         
-        # Calculate text starting position to center within background
-        text_bbox = self.font_text.getbbox(wrapped_desc.split('\n')[0])  # Get height of first line
-        text_y = desc_y + (bg_height - (text_bbox[3] - text_bbox[1])) // 2 - 20  # Center text vertically
+        # Calculate text position and add with glow
+        text_bbox = self.font_text.getbbox(wrapped_desc.split('\n')[0])
+        text_y = desc_y + (bg_height - (text_bbox[3] - text_bbox[1])) // 2 - 20
         
-        # Draw the wrapped text with proper positioning
-        draw.multiline_text((desc_x + 60, text_y), wrapped_desc,
-                          font=self.font_text,
-                          fill=(20, 20, 20),
-                          align='center')
-        
+        self.add_text_with_glow(
+            draw,
+            wrapped_desc,
+            (desc_x + 60, text_y),
+            self.font_text,
+            (20, 20, 20)
+        )
+
         # Add room and restaurant images with proper spacing
         image_width = (self.width - 480) // 2  # Increased margin between images from 360 to 480
         image_height = int(image_width * 0.6)  # Maintain aspect ratio
@@ -840,6 +844,81 @@ class SinglePageBrochureGenerator:
         except Exception as e:
             print(f"Error in generate_images: {str(e)}")
             raise Exception(str(e))
+
+    def enhance_image_quality(self, image):
+        """Enhance the quality of the input image"""
+        # Enhance contrast
+        enhancer = ImageEnhance.Contrast(image)
+        image = enhancer.enhance(1.1)
+        
+        # Enhance color
+        enhancer = ImageEnhance.Color(image)
+        image = enhancer.enhance(1.15)
+        
+        # Add subtle sharpening
+        image = image.filter(ImageFilter.UnsharpMask(radius=1, percent=150, threshold=3))
+        
+        return image
+
+    def create_enhanced_gradient(self, width, height):
+        """Create an enhanced gradient overlay"""
+        gradient = Image.new('RGBA', (width, height))
+        gradient_draw = ImageDraw.Draw(gradient)
+        
+        for y in range(height):
+            # Create a more dynamic gradient with multiple color stops
+            if y < height * 0.3:  # Top 30%
+                alpha = int(60 + (y / (height * 0.3)) * 80)
+            elif y > height * 0.7:  # Bottom 30%
+                alpha = int(140 + ((y - height * 0.7) / (height * 0.3)) * 115)
+            else:  # Middle section
+                alpha = 140
+            gradient_draw.line([(0, y), (width, y)], fill=(0, 0, 0, alpha))
+        
+        return gradient
+
+    def add_vignette(self, image):
+        """Add a subtle vignette effect to the image"""
+        vignette = Image.new('RGBA', (image.width, image.height))
+        vignette_draw = ImageDraw.Draw(vignette)
+        
+        for i in range(50):  # 50px vignette width
+            alpha = int(255 * (i / 50))
+            vignette_draw.rectangle(
+                [i, i, image.width-i, image.height-i],
+                outline=(0, 0, 0, alpha)
+            )
+        
+        return Image.alpha_composite(image.convert('RGBA'), vignette)
+
+    def add_text_with_glow(self, draw, text, position, font, color):
+        """Add text with a subtle glow effect"""
+        x, y = position
+        # Create glow effect
+        for offset in range(3, 0, -1):
+            alpha = int(50 / offset)
+            draw.text((x-offset, y-offset), text, font=font, fill=(*color, alpha))
+            draw.text((x+offset, y-offset), text, font=font, fill=(*color, alpha))
+            draw.text((x-offset, y+offset), text, font=font, fill=(*color, alpha))
+            draw.text((x+offset, y+offset), text, font=font, fill=(*color, alpha))
+        # Draw main text
+        draw.text(position, text, font=font, fill=color)
+
+    def create_enhanced_text_background(self, width, height, opacity=180):
+        """Create an enhanced background for text with subtle gradient and border"""
+        bg = Image.new('RGBA', (width, height), (255, 255, 255, 0))
+        draw = ImageDraw.Draw(bg)
+        
+        # Add subtle gradient
+        for y in range(height):
+            alpha = int(opacity * (1 - abs(y - height/2)/(height/2) * 0.2))
+            draw.line([(0, y), (width, y)], fill=(255, 255, 255, alpha))
+        
+        # Add border
+        border_color = (255, 255, 255, 100)
+        draw.rectangle([0, 0, width-1, height-1], outline=border_color)
+        
+        return bg
 
 def main():
     # Parse command line arguments

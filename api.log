@@ -927,3 +927,535 @@ Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resor
 2024-12-29 16:30:49,364 - uvicorn.error - INFO - Waiting for application shutdown.
 2024-12-29 16:30:49,366 - uvicorn.error - INFO - Application shutdown complete.
 2024-12-29 16:30:49,367 - uvicorn.error - INFO - Finished server process [23024]
+2025-01-02 21:20:45,522 - uvicorn.error - INFO - Started server process [10456]
+2025-01-02 21:20:45,540 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-02 21:20:45,541 - uvicorn.error - INFO - Application startup complete.
+2025-01-02 21:20:45,541 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-02 21:22:00,240 - __main__ - INFO - 
+Received prompt request: Generate a brochure for ABC Resort in Goa
+2025-01-02 21:22:00,240 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for ABC Resort in Goa
+2025-01-02 21:22:00,241 - __main__ - INFO - Trying 3 patterns...
+2025-01-02 21:22:00,241 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-02 21:22:00,241 - __main__ - INFO - Match found! Hotel: ABC Resort, Location: Goa
+2025-01-02 21:24:54,017 - __main__ - INFO - 
+Received prompt request: Generate a brochure for ABC Resort in Goa
+2025-01-02 21:24:54,019 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for ABC Resort in Goa
+2025-01-02 21:24:54,020 - __main__ - INFO - Trying 3 patterns...
+2025-01-02 21:24:54,021 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-02 21:24:54,021 - __main__ - INFO - Match found! Hotel: ABC Resort, Location: Goa
+2025-01-02 21:43:23,309 - uvicorn.error - INFO - Shutting down
+2025-01-02 21:43:23,419 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-02 21:43:23,420 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-02 21:43:23,420 - uvicorn.error - INFO - Finished server process [10456]
+2025-01-02 21:44:38,966 - uvicorn.error - INFO - Started server process [5272]
+2025-01-02 21:44:38,968 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-02 21:44:38,968 - uvicorn.error - INFO - Application startup complete.
+2025-01-02 21:44:38,969 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-02 21:46:42,567 - __main__ - INFO - 
+Received prompt request: Generate a brochure for ABC Resort in Goa
+2025-01-02 21:46:42,567 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for ABC Resort in Goa
+2025-01-02 21:46:42,568 - __main__ - INFO - Trying 3 patterns...
+2025-01-02 21:46:42,568 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-02 21:46:42,569 - __main__ - INFO - Match found! Hotel: ABC Resort, Location: Goa
+2025-01-02 21:53:32,357 - uvicorn.error - INFO - Shutting down
+2025-01-02 21:53:32,468 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-02 21:53:32,469 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-02 21:53:32,470 - uvicorn.error - INFO - Finished server process [5272]
+2025-01-02 21:53:55,447 - uvicorn.error - INFO - Started server process [1968]
+2025-01-02 21:53:55,449 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-02 21:53:55,449 - uvicorn.error - INFO - Application startup complete.
+2025-01-02 21:53:55,450 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-02 23:57:08,550 - uvicorn.error - INFO - Shutting down
+2025-01-02 23:57:08,672 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-02 23:57:08,676 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-02 23:57:08,677 - uvicorn.error - INFO - Finished server process [1968]
+2025-01-02 23:59:42,466 - uvicorn.error - INFO - Started server process [23756]
+2025-01-02 23:59:42,468 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-02 23:59:42,469 - uvicorn.error - INFO - Application startup complete.
+2025-01-02 23:59:42,470 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 00:16:17,322 - uvicorn.error - INFO - Shutting down
+2025-01-03 00:16:17,443 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 00:16:17,446 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 00:16:17,447 - uvicorn.error - INFO - Finished server process [23756]
+2025-01-03 00:16:54,789 - uvicorn.error - INFO - Started server process [19856]
+2025-01-03 00:16:54,800 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 00:16:54,801 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 00:16:54,802 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 00:24:33,400 - uvicorn.error - INFO - Shutting down
+2025-01-03 00:24:33,509 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 00:24:33,510 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 00:24:33,510 - uvicorn.error - INFO - Finished server process [19856]
+2025-01-03 00:25:04,644 - uvicorn.error - INFO - Started server process [21680]
+2025-01-03 00:25:04,646 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 00:25:04,647 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 00:25:04,647 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 00:41:12,658 - uvicorn.error - INFO - Shutting down
+2025-01-03 00:41:12,765 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 00:41:12,766 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 00:41:12,768 - uvicorn.error - INFO - Finished server process [21680]
+2025-01-03 00:41:26,285 - uvicorn.error - INFO - Started server process [20268]
+2025-01-03 00:41:26,289 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 00:41:26,290 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 00:41:26,291 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 01:06:46,532 - uvicorn.error - INFO - Shutting down
+2025-01-03 01:06:46,651 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 01:06:46,653 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 01:06:46,654 - uvicorn.error - INFO - Finished server process [20268]
+2025-01-03 01:08:36,318 - uvicorn.error - INFO - Started server process [20308]
+2025-01-03 01:08:36,322 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 01:08:36,322 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 01:08:36,323 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 01:12:43,180 - uvicorn.error - INFO - Shutting down
+2025-01-03 01:12:43,286 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 01:12:43,289 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 01:12:43,289 - uvicorn.error - INFO - Finished server process [20308]
+2025-01-03 01:12:51,067 - uvicorn.error - INFO - Started server process [2600]
+2025-01-03 01:12:51,070 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 01:12:51,070 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 01:12:51,071 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 01:17:12,418 - uvicorn.error - INFO - Shutting down
+2025-01-03 01:17:12,527 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 01:17:12,528 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 01:17:12,528 - uvicorn.error - INFO - Finished server process [2600]
+2025-01-03 01:17:30,583 - uvicorn.error - INFO - Started server process [25336]
+2025-01-03 01:17:30,585 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 01:17:30,586 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 01:17:30,586 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 01:19:32,875 - uvicorn.error - INFO - Shutting down
+2025-01-03 01:19:32,982 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 01:19:32,983 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 01:19:32,983 - uvicorn.error - INFO - Finished server process [25336]
+2025-01-03 01:20:09,110 - uvicorn.error - INFO - Started server process [21096]
+2025-01-03 01:20:09,113 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 01:20:09,113 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 01:20:09,113 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 01:33:05,039 - uvicorn.error - INFO - Shutting down
+2025-01-03 01:33:05,158 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 01:33:05,160 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 01:33:05,161 - uvicorn.error - INFO - Finished server process [21096]
+2025-01-03 01:33:30,827 - uvicorn.error - INFO - Started server process [16120]
+2025-01-03 01:33:30,830 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 01:33:30,830 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 01:33:30,830 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 01:43:03,582 - uvicorn.error - INFO - Shutting down
+2025-01-03 01:43:03,690 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 01:43:03,690 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 01:43:03,690 - uvicorn.error - INFO - Finished server process [16120]
+2025-01-03 01:43:20,304 - uvicorn.error - INFO - Started server process [16072]
+2025-01-03 01:43:20,306 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 01:43:20,307 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 01:43:20,307 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 01:44:52,560 - uvicorn.error - INFO - Shutting down
+2025-01-03 01:44:52,668 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 01:44:52,668 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 01:44:52,669 - uvicorn.error - INFO - Finished server process [16072]
+2025-01-03 01:48:30,424 - uvicorn.error - INFO - Started server process [13924]
+2025-01-03 01:48:30,426 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 01:48:30,426 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 01:48:30,426 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 01:50:11,921 - uvicorn.error - INFO - Shutting down
+2025-01-03 01:50:12,029 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 01:50:12,030 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 01:50:12,030 - uvicorn.error - INFO - Finished server process [13924]
+2025-01-03 08:41:50,583 - uvicorn.error - INFO - Started server process [22808]
+2025-01-03 08:41:50,650 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 08:41:50,652 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 08:41:50,653 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 09:03:51,867 - uvicorn.error - INFO - Shutting down
+2025-01-03 09:03:51,998 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 09:03:52,012 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 09:03:52,016 - uvicorn.error - INFO - Finished server process [22808]
+2025-01-03 09:04:24,565 - uvicorn.error - INFO - Started server process [16844]
+2025-01-03 09:04:24,568 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 09:04:24,568 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 09:04:24,569 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 09:12:29,484 - uvicorn.error - INFO - Shutting down
+2025-01-03 09:12:29,589 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 09:12:29,591 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 09:12:29,591 - uvicorn.error - INFO - Finished server process [16844]
+2025-01-03 09:49:31,809 - uvicorn.error - INFO - Started server process [3048]
+2025-01-03 09:49:31,816 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 09:49:31,817 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 09:49:31,817 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 09:50:42,058 - uvicorn.error - INFO - Shutting down
+2025-01-03 09:50:42,163 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 09:50:42,164 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 09:50:42,165 - uvicorn.error - INFO - Finished server process [3048]
+2025-01-03 09:51:08,127 - uvicorn.error - INFO - Started server process [24712]
+2025-01-03 09:51:08,128 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 09:51:08,130 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 09:51:08,130 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 09:53:01,544 - uvicorn.error - INFO - Shutting down
+2025-01-03 09:53:01,654 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 09:53:01,654 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 09:53:01,654 - uvicorn.error - INFO - Finished server process [24712]
+2025-01-03 13:04:13,242 - uvicorn.error - INFO - Started server process [16028]
+2025-01-03 13:04:13,246 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 13:04:13,247 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 13:04:13,248 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 13:05:34,443 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Ritz Carlton Resort in Pune
+2025-01-03 13:05:34,444 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Ritz Carlton Resort in Pune
+2025-01-03 13:05:34,446 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 13:05:34,446 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 13:05:34,447 - __main__ - INFO - Match found! Hotel: Ritz Carlton Resort, Location: Pune
+2025-01-03 19:53:02,921 - uvicorn.error - INFO - Started server process [1576]
+2025-01-03 19:53:02,942 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 19:53:02,942 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 19:53:02,943 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 19:54:50,194 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Le Meridian in France
+2025-01-03 19:54:50,199 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Le Meridian in France
+2025-01-03 19:54:50,199 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 19:54:50,200 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 19:54:50,207 - __main__ - INFO - Match found! Hotel: Le Meridian, Location: France
+2025-01-03 20:01:30,697 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Riveria Villa in Goa
+2025-01-03 20:01:30,698 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Riveria Villa in Goa
+2025-01-03 20:01:30,699 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 20:01:30,699 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 20:01:30,700 - __main__ - INFO - Match found! Hotel: Riveria Villa, Location: Goa
+2025-01-03 20:03:42,760 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Riveria Villa in Goa
+2025-01-03 20:03:42,762 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Riveria Villa in Goa
+2025-01-03 20:03:42,762 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 20:03:42,763 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 20:03:42,763 - __main__ - INFO - Match found! Hotel: Riveria Villa, Location: Goa
+2025-01-03 20:07:48,818 - __main__ - INFO - 
+Received prompt request: Generate a brochure for AVATAARA Resort in Goa
+2025-01-03 20:07:48,820 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for AVATAARA Resort in Goa
+2025-01-03 20:07:48,820 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 20:07:48,820 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 20:07:48,821 - __main__ - INFO - Match found! Hotel: AVATAARA Resort, Location: Goa
+2025-01-03 20:21:55,023 - uvicorn.error - INFO - Shutting down
+2025-01-03 20:21:55,131 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 20:21:55,132 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 20:21:55,133 - uvicorn.error - INFO - Finished server process [1576]
+2025-01-03 20:29:27,413 - uvicorn.error - INFO - Started server process [25668]
+2025-01-03 20:29:27,415 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 20:29:27,417 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 20:29:27,417 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 20:29:59,106 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sayaji Hotel in Mumbai
+2025-01-03 20:29:59,106 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sayaji Hotel in Mumbai
+2025-01-03 20:29:59,106 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 20:29:59,106 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 20:29:59,107 - __main__ - INFO - Match found! Hotel: Sayaji Hotel, Location: Mumbai
+2025-01-03 21:03:46,143 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Rainforest in Bali
+2025-01-03 21:03:46,144 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Rainforest in Bali
+2025-01-03 21:03:46,144 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 21:03:46,144 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 21:03:46,144 - __main__ - INFO - Match found! Hotel: Rainforest, Location: Bali
+2025-01-03 21:34:42,210 - uvicorn.error - INFO - Shutting down
+2025-01-03 21:34:42,302 - uvicorn.error - INFO - Waiting for connections to close. (CTRL+C to force quit)
+2025-01-03 21:34:43,444 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 21:34:43,446 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 21:34:43,446 - uvicorn.error - INFO - Finished server process [25668]
+2025-01-03 22:01:09,409 - uvicorn.error - INFO - Started server process [8276]
+2025-01-03 22:01:09,413 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 22:01:09,413 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 22:01:09,413 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 22:02:12,901 - __main__ - INFO - 
+Received prompt request: Generate a brochure for JW Mariott in Goa
+2025-01-03 22:02:12,905 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for JW Mariott in Goa
+2025-01-03 22:02:12,906 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:02:12,906 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:02:12,907 - __main__ - INFO - Match found! Hotel: JW Mariott, Location: Goa
+2025-01-03 22:18:24,224 - __main__ - INFO - 
+Received prompt request: Generate a brochure for JW Mariott in Goa
+2025-01-03 22:18:24,227 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for JW Mariott in Goa
+2025-01-03 22:18:24,227 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:18:24,228 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:18:24,229 - __main__ - INFO - Match found! Hotel: JW Mariott, Location: Goa
+2025-01-03 22:29:08,373 - uvicorn.error - INFO - Started server process [13904]
+2025-01-03 22:29:08,377 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 22:29:08,378 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 22:29:08,379 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 22:30:22,478 - __main__ - INFO - 
+Received prompt request: Generate a brochure for JW Mariott in Goa
+2025-01-03 22:30:22,478 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for JW Mariott in Goa
+2025-01-03 22:30:22,478 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:30:22,479 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:30:22,479 - __main__ - INFO - Match found! Hotel: JW Mariott, Location: Goa
+2025-01-03 22:35:55,378 - uvicorn.error - INFO - Shutting down
+2025-01-03 22:35:55,484 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 22:35:55,485 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 22:35:55,486 - uvicorn.error - INFO - Finished server process [13904]
+2025-01-03 22:36:37,736 - uvicorn.error - INFO - Started server process [30080]
+2025-01-03 22:36:37,741 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 22:36:37,741 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 22:36:37,743 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 22:38:11,274 - __main__ - INFO - 
+Received prompt request: Generate a brochure for JW Mariott in Goa
+2025-01-03 22:38:11,277 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for JW Mariott in Goa
+2025-01-03 22:38:11,278 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:38:11,279 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:38:11,280 - __main__ - INFO - Match found! Hotel: JW Mariott, Location: Goa
+2025-01-03 22:45:38,068 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:45:38,070 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:45:38,073 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:45:38,074 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:45:38,077 - __main__ - INFO - Match found! Hotel: Hilton Resort, Location: Goa
+2025-01-03 22:51:59,425 - uvicorn.error - INFO - Shutting down
+2025-01-03 22:51:59,534 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 22:51:59,536 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 22:51:59,537 - uvicorn.error - INFO - Finished server process [30080]
+2025-01-03 22:52:10,534 - uvicorn.error - INFO - Started server process [25160]
+2025-01-03 22:52:10,536 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 22:52:10,536 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 22:52:10,536 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 22:54:04,311 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:54:04,312 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:54:04,312 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:54:04,312 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:54:04,312 - __main__ - INFO - Match found! Hotel: Hilton Resort, Location: Goa
+2025-01-03 22:56:02,460 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:56:02,461 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:56:02,461 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:56:02,461 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:56:02,461 - __main__ - INFO - Match found! Hotel: Hilton Resort, Location: Goa
+2025-01-03 22:56:39,228 - uvicorn.error - INFO - Shutting down
+2025-01-03 22:56:39,337 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 22:56:39,339 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 22:56:39,340 - uvicorn.error - INFO - Finished server process [25160]
+2025-01-03 22:57:06,809 - uvicorn.error - INFO - Started server process [6580]
+2025-01-03 22:57:06,811 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 22:57:06,811 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 22:57:06,812 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 22:58:05,811 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:58:05,812 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:58:05,812 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:58:05,812 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:58:05,813 - __main__ - INFO - Match found! Hotel: Hilton Resort, Location: Goa
+2025-01-03 22:58:50,696 - uvicorn.error - INFO - Shutting down
+2025-01-03 22:58:50,804 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 22:58:50,808 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 22:58:50,811 - uvicorn.error - INFO - Finished server process [6580]
+2025-01-03 22:59:24,768 - uvicorn.error - INFO - Started server process [15708]
+2025-01-03 22:59:24,771 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-03 22:59:24,771 - uvicorn.error - INFO - Application startup complete.
+2025-01-03 22:59:24,771 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-03 22:59:45,846 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:59:45,847 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Hilton Resort in Goa
+2025-01-03 22:59:45,847 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 22:59:45,848 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 22:59:45,848 - __main__ - INFO - Match found! Hotel: Hilton Resort, Location: Goa
+2025-01-03 23:11:04,752 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Hilton Resort in Goa
+2025-01-03 23:11:04,753 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Hilton Resort in Goa
+2025-01-03 23:11:04,753 - __main__ - INFO - Trying 3 patterns...
+2025-01-03 23:11:04,754 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-03 23:11:04,755 - __main__ - INFO - Match found! Hotel: Hilton Resort, Location: Goa
+2025-01-03 23:14:33,634 - uvicorn.error - INFO - Shutting down
+2025-01-03 23:14:33,745 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-03 23:14:33,746 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-03 23:14:33,746 - uvicorn.error - INFO - Finished server process [15708]
+2025-01-04 00:51:31,886 - uvicorn.error - INFO - Started server process [11640]
+2025-01-04 00:51:31,946 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 00:51:31,947 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 00:51:31,948 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 00:55:58,395 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Grand Hyatt in Goa
+2025-01-04 00:55:58,399 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Grand Hyatt in Goa
+2025-01-04 00:55:58,400 - __main__ - INFO - Trying 3 patterns...
+2025-01-04 00:55:58,402 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 00:55:58,406 - __main__ - INFO - Match found! Hotel: Grand Hyatt, Location: Goa
+2025-01-04 01:01:04,676 - uvicorn.error - INFO - Shutting down
+2025-01-04 01:01:04,785 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 01:01:04,787 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 01:01:04,788 - uvicorn.error - INFO - Finished server process [11640]
+2025-01-04 01:01:32,836 - uvicorn.error - INFO - Started server process [15376]
+2025-01-04 01:01:32,838 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 01:01:32,839 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 01:01:32,839 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 01:05:42,476 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Grand Hyatt in Goa
+2025-01-04 01:05:42,477 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Grand Hyatt in Goa
+2025-01-04 01:05:42,477 - __main__ - INFO - Trying 3 patterns...
+2025-01-04 01:05:42,478 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 01:05:42,478 - __main__ - INFO - Match found! Hotel: Grand Hyatt, Location: Goa
+2025-01-04 01:07:39,017 - uvicorn.error - INFO - Shutting down
+2025-01-04 01:07:39,126 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 01:07:39,138 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 01:07:39,139 - uvicorn.error - INFO - Finished server process [15376]
+2025-01-04 01:08:03,124 - uvicorn.error - INFO - Started server process [23952]
+2025-01-04 01:08:03,127 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 01:08:03,127 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 01:08:03,128 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 01:08:57,272 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Grand Hyatt in Goa
+2025-01-04 01:08:57,273 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Grand Hyatt in Goa
+2025-01-04 01:08:57,273 - __main__ - INFO - Trying 3 patterns...
+2025-01-04 01:08:57,274 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 01:08:57,275 - __main__ - INFO - Match found! Hotel: Grand Hyatt, Location: Goa
+2025-01-04 01:10:29,090 - uvicorn.error - INFO - Shutting down
+2025-01-04 01:10:29,198 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 01:10:29,204 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 01:10:29,206 - uvicorn.error - INFO - Finished server process [23952]
+2025-01-04 10:32:33,401 - uvicorn.error - INFO - Started server process [12192]
+2025-01-04 10:32:33,446 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 10:32:33,446 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 10:32:33,447 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 10:34:01,409 - uvicorn.error - INFO - Shutting down
+2025-01-04 10:34:01,517 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 10:34:01,518 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 10:34:01,518 - uvicorn.error - INFO - Finished server process [12192]
+2025-01-04 10:34:09,071 - uvicorn.error - INFO - Started server process [20640]
+2025-01-04 10:34:09,075 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 10:34:09,075 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 10:34:09,076 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 10:35:12,291 - uvicorn.error - INFO - Shutting down
+2025-01-04 10:35:12,399 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 10:35:12,401 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 10:35:12,402 - uvicorn.error - INFO - Finished server process [20640]
+2025-01-04 10:37:08,496 - uvicorn.error - INFO - Started server process [3968]
+2025-01-04 10:37:08,518 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 10:37:08,519 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 10:37:08,519 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 10:42:28,007 - uvicorn.error - INFO - Shutting down
+2025-01-04 10:42:28,127 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 10:42:28,133 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 10:42:28,133 - uvicorn.error - INFO - Finished server process [3968]
+2025-01-04 10:42:59,532 - uvicorn.error - INFO - Started server process [21916]
+2025-01-04 10:42:59,536 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 10:42:59,536 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 10:42:59,536 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 10:43:38,625 - uvicorn.error - INFO - Shutting down
+2025-01-04 10:43:38,733 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 10:43:38,735 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 10:43:38,736 - uvicorn.error - INFO - Finished server process [21916]
+2025-01-04 10:43:57,675 - uvicorn.error - INFO - Started server process [21244]
+2025-01-04 10:43:57,678 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 10:43:57,678 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 10:43:57,678 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 10:44:43,371 - uvicorn.error - INFO - Shutting down
+2025-01-04 10:44:43,479 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 10:44:43,482 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 10:44:43,483 - uvicorn.error - INFO - Finished server process [21244]
+2025-01-04 10:51:06,146 - uvicorn.error - INFO - Started server process [11180]
+2025-01-04 10:51:06,147 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 10:51:06,147 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 10:51:06,148 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 10:53:57,321 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Grand Hyatt in Goa
+2025-01-04 10:53:57,323 - __main__ - INFO - 
+Extracting hotel info from prompt using NLP: Generate a brochure for Grand Hyatt in Goa
+2025-01-04 10:53:57,448 - __main__ - INFO - Found entities: [('Grand Hyatt', 'PERSON')]
+2025-01-04 10:53:57,449 - __main__ - ERROR - Error in NLP extraction: Could not extract hotel name and location from prompt
+2025-01-04 10:53:57,450 - __main__ - ERROR - Error type: <class 'ValueError'>
+2025-01-04 10:53:57,450 - __main__ - ERROR - Validation error: Could not understand the prompt. Please try rephrasing it.
+2025-01-04 10:53:57,450 - __main__ - ERROR - Error type: <class 'ValueError'>
+2025-01-04 10:54:26,111 - __main__ - INFO - 
+Received prompt request: I need a brochure for the Grand Hyatt Resort located in Goa
+2025-01-04 10:54:26,113 - __main__ - INFO - 
+Extracting hotel info from prompt using NLP: I need a brochure for the Grand Hyatt Resort located in Goa
+2025-01-04 10:54:26,167 - __main__ - INFO - Found entities: [('the Grand Hyatt Resort', 'ORG'), ('Goa', 'PERSON')]
+2025-01-04 10:54:26,168 - __main__ - ERROR - Error in NLP extraction: Could not extract hotel name and location from prompt
+2025-01-04 10:54:26,174 - __main__ - ERROR - Error type: <class 'ValueError'>
+2025-01-04 10:54:26,176 - __main__ - ERROR - Validation error: Could not understand the prompt. Please try rephrasing it.
+2025-01-04 10:54:26,176 - __main__ - ERROR - Error type: <class 'ValueError'>
+2025-01-04 10:54:37,040 - __main__ - INFO - 
+Received prompt request: I need a brochure for the Grand Hyatt Resort located in Goa
+2025-01-04 10:54:37,042 - __main__ - INFO - 
+Extracting hotel info from prompt using NLP: I need a brochure for the Grand Hyatt Resort located in Goa
+2025-01-04 10:54:37,050 - __main__ - INFO - Found entities: [('the Grand Hyatt Resort', 'ORG'), ('Goa', 'PERSON')]
+2025-01-04 10:54:37,051 - __main__ - ERROR - Error in NLP extraction: Could not extract hotel name and location from prompt
+2025-01-04 10:54:37,051 - __main__ - ERROR - Error type: <class 'ValueError'>
+2025-01-04 10:54:37,054 - __main__ - ERROR - Validation error: Could not understand the prompt. Please try rephrasing it.
+2025-01-04 10:54:37,054 - __main__ - ERROR - Error type: <class 'ValueError'>
+2025-01-04 10:54:43,651 - uvicorn.error - INFO - Shutting down
+2025-01-04 10:54:43,759 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 10:54:43,761 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 10:54:43,761 - uvicorn.error - INFO - Finished server process [11180]
+2025-01-04 10:55:01,771 - uvicorn.error - INFO - Started server process [10188]
+2025-01-04 10:55:01,773 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 10:55:01,773 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 10:55:01,775 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 10:56:00,393 - __main__ - INFO - 
+Received prompt request: I need a brochure for the Grand Hyatt Resort located in Goa
+2025-01-04 10:56:00,395 - __main__ - INFO - 
+Extracting hotel info from prompt: I need a brochure for the Grand Hyatt Resort located in Goa
+2025-01-04 10:56:00,396 - __main__ - INFO - Trying 3 patterns...
+2025-01-04 10:56:00,397 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 10:56:00,398 - __main__ - INFO - Trying pattern 2: (?i)create.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 10:56:00,399 - __main__ - INFO - Trying pattern 3: (?i)make.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 10:56:00,399 - __main__ - INFO - No pattern matched, trying fallback method...
+2025-01-04 10:56:00,400 - __main__ - INFO - Split words: ['I', 'need', 'a', 'brochure', 'for', 'the', 'Grand', 'Hyatt', 'Resort', 'located', 'in', 'Goa']
+2025-01-04 10:56:00,400 - __main__ - INFO - Processing word 0: I
+2025-01-04 10:56:00,400 - __main__ - INFO - Processing word 1: need
+2025-01-04 10:56:00,402 - __main__ - INFO - Processing word 2: a
+2025-01-04 10:56:00,402 - __main__ - INFO - Processing word 3: brochure
+2025-01-04 10:56:00,403 - __main__ - INFO - Processing word 4: for
+2025-01-04 10:56:00,409 - __main__ - INFO - Processing word 5: the
+2025-01-04 10:56:00,409 - __main__ - INFO - Processing word 6: Grand
+2025-01-04 10:56:00,410 - __main__ - INFO - Processing word 7: Hyatt
+2025-01-04 10:56:00,410 - __main__ - INFO - Processing word 8: Resort
+2025-01-04 10:56:00,411 - __main__ - INFO - Processing word 9: located
+2025-01-04 10:56:00,411 - __main__ - INFO - Processing word 10: in
+2025-01-04 10:56:00,411 - __main__ - INFO - Found 'in' at position 10
+2025-01-04 10:56:00,412 - __main__ - INFO - Processing word 11: Goa
+2025-01-04 10:56:00,412 - __main__ - INFO - Capitalized words: ['I', 'Grand', 'Hyatt', 'Resort']
+2025-01-04 10:56:00,413 - __main__ - INFO - Location words: ['Goa']
+2025-01-04 10:56:00,413 - __main__ - INFO - Fallback method succeeded: {'hotel_name': 'I Grand Hyatt Resort', 'location': 'Goa', 'layout': 'full_bleed'}
+2025-01-04 10:56:57,250 - uvicorn.error - INFO - Shutting down
+2025-01-04 10:56:57,359 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 10:56:57,360 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 10:56:57,360 - uvicorn.error - INFO - Finished server process [10188]
+2025-01-04 12:01:08,000 - uvicorn.error - INFO - Started server process [20296]
+2025-01-04 12:01:08,042 - uvicorn.error - INFO - Waiting for application startup.
+2025-01-04 12:01:08,044 - uvicorn.error - INFO - Application startup complete.
+2025-01-04 12:01:08,045 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+2025-01-04 12:02:58,505 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Grand Hyatt Resort in Maldives
+2025-01-04 12:02:58,505 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Grand Hyatt Resort in Maldives
+2025-01-04 12:02:58,505 - __main__ - INFO - Trying 3 patterns...
+2025-01-04 12:02:58,505 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 12:02:58,505 - __main__ - INFO - Match found! Hotel: Grand Hyatt Resort, Location: Maldives
+2025-01-04 12:35:08,146 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Goa
+2025-01-04 12:35:08,147 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Goa
+2025-01-04 12:35:08,147 - __main__ - INFO - Trying 3 patterns...
+2025-01-04 12:35:08,147 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 12:35:08,147 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Goa
+2025-01-04 12:44:40,746 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Himachal
+2025-01-04 12:44:40,749 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Himachal
+2025-01-04 12:44:40,750 - __main__ - INFO - Trying 3 patterns...
+2025-01-04 12:44:40,751 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-04 12:44:40,752 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Himachal
+2025-01-04 12:51:49,590 - uvicorn.error - INFO - Shutting down
+2025-01-04 12:51:49,699 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-01-04 12:51:49,701 - uvicorn.error - INFO - Application shutdown complete.
+2025-01-04 12:51:49,701 - uvicorn.error - INFO - Finished server process [20296]
