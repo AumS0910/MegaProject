@@ -60,15 +60,19 @@ def test_image_generation(hotel_name="Sunset Bay Resort", location="Maldives", c
                 }
 
                 # Make the API request
+                api_url = "http://127.0.0.1:7861/sdapi/v1/txt2img"  # Updated port to 7861
+                print(f"Sending request to: {api_url}")
                 response = requests.post(
-                    url="http://127.0.0.1:7860/sdapi/v1/txt2img",
+                    url=api_url,
                     json=payload,
-                    headers={'Content-Type': 'application/json'}
+                    headers={'Content-Type': 'application/json'},
+                    timeout=300  # 5 minute timeout
                 )
 
                 # Check if request was successful
                 if response.status_code != 200:
                     print(f"Error: Received status code {response.status_code}")
+                    print(f"Response content: {response.text}")
                     failed_images.append(prompt_data['name'])
                     continue
 
@@ -76,6 +80,7 @@ def test_image_generation(hotel_name="Sunset Bay Resort", location="Maldives", c
                 response_data = response.json()
                 if 'images' not in response_data or not response_data['images']:
                     print("No images in response")
+                    print(f"Full response: {json.dumps(response_data, indent=2)}")
                     failed_images.append(prompt_data['name'])
                     continue
 
@@ -98,28 +103,27 @@ def test_image_generation(hotel_name="Sunset Bay Resort", location="Maldives", c
                 print(f"File size: {os.path.getsize(filename)} bytes")
                 generated_images.append(filename)
 
+            except requests.exceptions.ConnectionError:
+                print(f"Error generating {prompt_data['name']}: Could not connect to Stable Diffusion API")
+                print("Please make sure the API is running on http://127.0.0.1:7861")
+                failed_images.append(prompt_data['name'])
             except Exception as e:
                 print(f"Error generating {prompt_data['name']}: {str(e)}")
                 failed_images.append(prompt_data['name'])
 
-        # Check directory contents after generation
-        print(f"\nDirectory contents after generation:")
+        print("\nDirectory contents after generation:")
         for f in os.listdir(output_dir):
             if hotel_name.replace(' ', '_') in f:
                 print(f"  {f}")
 
-        # Check if all images were generated
         if failed_images:
-            error_msg = f"Failed to generate images: {', '.join(failed_images)}"
-            print(error_msg)
-            return False
-        
-        print(f"Successfully generated all images: {', '.join(generated_images)}")
-        return True
+            raise Exception(f"Failed to generate images: {', '.join(failed_images)}")
+
+        return generated_images
 
     except Exception as e:
-        print(f"Error in image generation: {str(e)}")
-        return False
+        print(f"Error in generate_images: {str(e)}")
+        raise
 
 if __name__ == "__main__":
     # Test the function

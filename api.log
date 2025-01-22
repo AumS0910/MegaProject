@@ -1459,3 +1459,116 @@ Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resor
 2025-01-04 12:51:49,699 - uvicorn.error - INFO - Waiting for application shutdown.
 2025-01-04 12:51:49,701 - uvicorn.error - INFO - Application shutdown complete.
 2025-01-04 12:51:49,701 - uvicorn.error - INFO - Finished server process [20296]
+2025-01-20 21:28:22,599 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 21:28:22,606 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 21:28:22,606 - __main__ - INFO - Trying 3 patterns...
+2025-01-20 21:28:22,607 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-20 21:28:22,607 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-20 21:28:24,706 - __main__ - ERROR - Unexpected error: 'SinglePageBrochureGenerator' object has no attribute 'get_fallback_description'
+2025-01-20 21:28:24,706 - __main__ - ERROR - Error type: <class 'AttributeError'>
+2025-01-20 21:29:23,826 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 21:29:23,826 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 21:29:23,826 - __main__ - INFO - Trying 3 patterns...
+2025-01-20 21:29:23,827 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-20 21:29:23,827 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-20 21:29:34,595 - __main__ - ERROR - Error during image generation: Image generation failed
+2025-01-20 21:29:34,595 - __main__ - ERROR - Error type: <class 'Exception'>
+2025-01-20 21:29:34,595 - __main__ - ERROR - Unexpected error: 
+2025-01-20 21:29:34,595 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2025-01-20 21:30:41,616 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 21:30:41,618 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 21:30:41,619 - __main__ - INFO - Trying 3 patterns...
+2025-01-20 21:30:41,620 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-20 21:30:41,620 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-20 21:30:59,767 - __main__ - ERROR - Error during image generation: Image generation failed
+2025-01-20 21:30:59,768 - __main__ - ERROR - Error type: <class 'Exception'>
+2025-01-20 21:30:59,769 - __main__ - ERROR - Unexpected error: 
+2025-01-20 21:30:59,770 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2025-01-20 21:31:28,617 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 21:31:28,618 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 21:31:28,619 - __main__ - INFO - Trying 3 patterns...
+2025-01-20 21:31:28,619 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-20 21:31:28,620 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-20 21:31:37,559 - __main__ - ERROR - Error during image generation: Image generation failed
+2025-01-20 21:31:37,560 - __main__ - ERROR - Error type: <class 'Exception'>
+2025-01-20 21:31:37,563 - __main__ - ERROR - Unexpected error: 
+2025-01-20 21:31:37,563 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2025-01-20 22:48:21,910 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 22:48:21,911 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 22:48:21,912 - __main__ - INFO - Trying 3 patterns...
+2025-01-20 22:48:21,912 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-20 22:48:21,914 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-20 22:48:38,315 - __main__ - ERROR - Error during image generation: Image generation failed
+2025-01-20 22:48:38,316 - __main__ - ERROR - Error type: <class 'Exception'>
+2025-01-20 22:48:38,316 - __main__ - ERROR - Unexpected error: 
+2025-01-20 22:48:38,317 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2025-01-20 22:55:34,219 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 22:55:34,221 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 22:55:34,221 - __main__ - INFO - Trying 3 patterns...
+2025-01-20 22:55:34,221 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-20 22:55:34,222 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-20 22:55:51,939 - __main__ - ERROR - Error during image generation: Image generation failed
+2025-01-20 22:55:51,941 - __main__ - ERROR - Error type: <class 'Exception'>
+2025-01-20 22:55:51,941 - __main__ - ERROR - Unexpected error: 
+2025-01-20 22:55:51,941 - __main__ - ERROR - Error type: <class 'fastapi.exceptions.HTTPException'>
+2025-01-20 22:58:22,296 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 22:58:22,296 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-20 22:58:22,298 - __main__ - INFO - Trying 3 patterns...
+2025-01-20 22:58:22,298 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-20 22:58:22,298 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-21 21:51:29,562 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-21 21:51:29,567 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-21 21:51:29,568 - __main__ - INFO - Trying 3 patterns...
+2025-01-21 21:51:29,568 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-21 21:51:29,570 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-21 22:59:36,699 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-21 22:59:36,701 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Sunset Paradise Resort in Maldives
+2025-01-21 22:59:36,701 - __main__ - INFO - Trying 3 patterns...
+2025-01-21 22:59:36,702 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-21 22:59:36,704 - __main__ - INFO - Match found! Hotel: Sunset Paradise Resort, Location: Maldives
+2025-01-22 12:19:53,748 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Taj Village Resort in Goa
+2025-01-22 12:19:53,752 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Taj Village Resort in Goa
+2025-01-22 12:19:53,752 - __main__ - INFO - Trying 3 patterns...
+2025-01-22 12:19:53,755 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-22 12:19:53,757 - __main__ - INFO - Match found! Hotel: Taj Village Resort, Location: Goa
+2025-01-22 12:25:22,509 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Taj Village Resort in Goa
+2025-01-22 12:25:22,514 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Taj Village Resort in Goa
+2025-01-22 12:25:22,514 - __main__ - INFO - Trying 3 patterns...
+2025-01-22 12:25:22,514 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-22 12:25:22,515 - __main__ - INFO - Match found! Hotel: Taj Village Resort, Location: Goa
+2025-01-22 12:29:52,799 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Taj Fort Aguada in Goa
+2025-01-22 12:29:52,799 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Taj Fort Aguada in Goa
+2025-01-22 12:29:52,800 - __main__ - INFO - Trying 3 patterns...
+2025-01-22 12:29:52,800 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-22 12:29:52,800 - __main__ - INFO - Match found! Hotel: Taj Fort Aguada, Location: Goa
+2025-01-22 12:38:19,265 - __main__ - INFO - 
+Received prompt request: Generate a brochure for Taj Vivanta Resort in Goa
+2025-01-22 12:38:19,266 - __main__ - INFO - 
+Extracting hotel info from prompt: Generate a brochure for Taj Vivanta Resort in Goa
+2025-01-22 12:38:19,268 - __main__ - INFO - Trying 3 patterns...
+2025-01-22 12:38:19,269 - __main__ - INFO - Trying pattern 1: (?i)generate.*?(?:brochure|flyer).*?for\s+(.*?)\s+in\s+(.*?)(?:\.|$|\s)
+2025-01-22 12:38:19,270 - __main__ - INFO - Match found! Hotel: Taj Vivanta Resort, Location: Goa
