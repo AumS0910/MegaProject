@@ -5,6 +5,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.security.Key;
@@ -34,7 +35,7 @@ public class JwtService {
                 .compact();
     }
 
-    public String getEmailFromToken(String token) {
+    public String extractUsername(String token) {
         Claims claims = Jwts.parserBuilder()
                 .setSigningKey(getSigningKey())
                 .build()
@@ -44,13 +45,17 @@ public class JwtService {
         return claims.getSubject();
     }
 
-    public boolean validateToken(String token) {
+    public boolean isTokenValid(String token, UserDetails userDetails) {
         try {
-            Jwts.parserBuilder()
+            String username = extractUsername(token);
+            Claims claims = Jwts.parserBuilder()
                     .setSigningKey(getSigningKey())
                     .build()
-                    .parseClaimsJws(token);
-            return true;
+                    .parseClaimsJws(token)
+                    .getBody();
+            
+            boolean isTokenExpired = claims.getExpiration().before(new Date());
+            return (username.equals(userDetails.getUsername())) && !isTokenExpired;
         } catch (Exception ex) {
             return false;
         }

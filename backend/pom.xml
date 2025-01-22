@@ -76,6 +76,16 @@
             <artifactId>jakarta.validation-api</artifactId>
             <version>3.0.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>9.16.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
+            <version>9.16.3</version>
+        </dependency>
         <!-- Add iText PDF dependencies -->
         <dependency>
             <groupId>com.itextpdf</groupId>

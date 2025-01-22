@@ -2,6 +2,7 @@ package com.brochure.service;
 
 import com.brochure.model.BrochureHistory;
 import com.brochure.repository.BrochureHistoryRepository;
+import com.brochure.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,19 @@ public class BrochureHistoryService {
 
     @Autowired
     private BrochureHistoryRepository repository;
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public Long getUserIdByEmail(String email) {
+        logger.info("Getting user ID for email: {}", email);
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> {
+                    logger.error("User not found for email: {}", email);
+                    return new IllegalStateException("User not found");
+                })
+                .getId();
+    }
 
     public List<BrochureHistory> getRecentBrochures(Long userId, int limit) {
         try {

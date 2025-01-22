@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Entity
 @Table(name = "brochure_history")
@@ -14,7 +15,8 @@ import java.time.LocalDateTime;
 public class BrochureHistory {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    @Column(columnDefinition = "UUID")
+    private UUID id;
 
     @Column(name = "user_id", nullable = false)
     private Long userId;

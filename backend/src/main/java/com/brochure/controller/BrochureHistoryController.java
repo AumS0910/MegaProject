@@ -65,9 +65,18 @@ public class BrochureHistoryController {
 
     // Helper method to get userId from UserDetails
     private Long getUserIdFromUserDetails(UserDetails userDetails) {
-        logger.info("Getting user ID from UserDetails: {}", userDetails);
-        // For now, using a placeholder. In production, implement proper user ID retrieval
-        return 1L;
+        if (userDetails == null) {
+            logger.error("UserDetails is null");
+            throw new IllegalStateException("User not authenticated");
+        }
+        try {
+            String username = userDetails.getUsername();
+            // Extract user ID from the username (email)
+            return service.getUserIdByEmail(username);
+        } catch (Exception e) {
+            logger.error("Error getting user ID from UserDetails", e);
+            throw new IllegalStateException("Could not retrieve user ID", e);
+        }
     }
 }
 
