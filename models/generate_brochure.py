@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import textwrap
 import sys
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-from test_t5_server import generate_hotel_description
+from test_t5_server import generate_hotel_description, generate_amenities
 from test_image_generation import test_image_generation
 
 class BrochureGenerator:
@@ -64,6 +64,9 @@ class BrochureGenerator:
             'restaurant': generate_hotel_description(self.hotel_name, "restaurant")
         }
         
+        # Generate amenities
+        amenities = generate_amenities(self.hotel_name, self.location)
+        
         print("\nGenerating images...")
         # Generate images
         test_image_generation(self.hotel_name, self.location)
@@ -85,6 +88,18 @@ class BrochureGenerator:
                 description = descriptions[img_type] if img_type in descriptions else f"Welcome to {self.hotel_name}'s {img_type} area."
                 page = self.create_page(image_path, title, description)
                 pages.append(page)
+        
+        # Create amenities page
+        amenities_page = Image.new('RGB', (1920, 1080), color='black')
+        self.add_text_to_image(amenities_page, "LUXURY AMENITIES", (50, 50), self.font_heading)
+        
+        # Add each amenity with bullet points
+        y_position = 150
+        for amenity in amenities:
+            self.add_text_to_image(amenities_page, f"• {amenity}", (50, y_position), self.font_text)
+            y_position += 100
+        
+        pages.append(amenities_page)
         
         # Save individual pages and combined PDF
         for i, page in enumerate(pages):

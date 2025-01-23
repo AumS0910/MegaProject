@@ -34,6 +34,35 @@ class SinglePageBrochureGenerator:
         # Initialize descriptions dictionary
         self.descriptions = {}
         
+        # Define fallback descriptions
+        self.fallback_descriptions = {
+            'himalayan': {
+                'overview': f"Experience luxury amidst the majestic Himalayas at {self.hotel_name}. Nestled in the serene mountains of {self.location}, our resort offers breathtaking views, world-class amenities, and the perfect blend of traditional hospitality and modern comfort.",
+                'room': f"Our elegantly appointed rooms and suites feature panoramic mountain views, premium furnishings, and modern amenities. Each space is thoughtfully designed to provide the ultimate comfort while showcasing the natural beauty of {self.location}.",
+                'dining': f"Savor the flavors of the Himalayas at our signature restaurant. Our expert chefs craft exquisite dishes using local {self.location} ingredients and traditional recipes, served in a stunning mountain-view setting."
+            },
+            'mountain': {
+                'overview': f"Welcome to {self.hotel_name}, a luxury mountain retreat in {self.location}. Our resort offers spectacular views, premium amenities, and an unforgettable mountain experience.",
+                'room': "Our luxurious rooms and suites feature breathtaking mountain views, premium furnishings, and modern amenities for the perfect mountain getaway.",
+                'dining': f"Experience exceptional dining at our mountain-view restaurant, featuring fresh local ingredients and spectacular views of {self.location}."
+            },
+            'beach': {
+                'overview': f"Welcome to {self.hotel_name}, a luxury beachfront paradise in {self.location}. Experience world-class amenities and unparalleled ocean views.",
+                'room': "Our luxurious rooms and suites offer stunning ocean views, premium furnishings, and modern amenities for the perfect beach getaway.",
+                'dining': f"Savor fresh seafood and local specialties at our oceanfront restaurant while enjoying panoramic views of {self.location}."
+            },
+            'city': {
+                'overview': f"Welcome to {self.hotel_name}, a luxury urban oasis in the heart of {self.location}. Experience sophisticated comfort and world-class service.",
+                'room': "Our elegant rooms and suites feature city views, premium furnishings, and modern amenities for the perfect urban retreat.",
+                'dining': f"Experience culinary excellence at our restaurant, featuring innovative cuisine and the finest ingredients {self.location} has to offer."
+            },
+            'resort': {
+                'overview': f"Welcome to {self.hotel_name}, a luxury resort destination in {self.location}. Experience exceptional service and world-class amenities.",
+                'room': "Our luxurious rooms and suites feature elegant décor, premium furnishings, and modern amenities for an unforgettable stay.",
+                'dining': f"Indulge in exceptional dining at our signature restaurant, featuring fresh local ingredients and international cuisine."
+            }
+        }
+        
         # Load fonts with adjusted sizes
         try:
             self.font_title = ImageFont.truetype("fonts/Montserrat-Bold.ttf", 140)
@@ -88,6 +117,65 @@ class SinglePageBrochureGenerator:
         self.room_image_path = f'generated_images/{safe_hotel_name}_room.png'
         self.restaurant_image_path = f'generated_images/{safe_hotel_name}_restaurant.png'
         
+        # Define fallback amenities based on location type
+        self.fallback_amenities = {
+            'beach': [
+                'Private Beach Cabanas with Butler Service',
+                'Oceanfront Infinity Pool & Spa',
+                'Luxury Yacht Charter Services',
+                'Beachside Fine Dining Restaurant',
+                'Water Sports & Diving Center',
+                'Sunset Beach Bar & Lounge'
+            ],
+            'mountain': [
+                'Private Helipad & Mountain Tours',
+                'Luxury Mountain-View Infinity Pool',
+                'Alpine Spa & Wellness Center',
+                'Mountain-view Fine Dining',
+                'Adventure Sports Center with Expert Guides',
+                'Cozy Fireside Lounge with Valley Views'
+            ],
+            'himalayan': [  # Special category for Himalayan regions
+                'Private Helicopter Tours of Snow Peaks',
+                'Himalayan Spa with Traditional Treatments',
+                'Heated Infinity Pool with Mountain Views',
+                'Mountain-view Fine Dining Restaurant',
+                'Luxury Adventure Sports Center',
+                'Traditional Meditation & Yoga Center'
+            ],
+            'city': [
+                'Rooftop Infinity Pool & Lounge',
+                'Michelin-starred Restaurant',
+                'Private Shopping Concierge',
+                'Executive Business Center',
+                'Luxury Car Service',
+                'Sky Bar with City Views'
+            ],
+            'resort': [
+                'Private Butler Service',
+                'World-class Spa & Wellness Center',
+                'Championship Golf Course',
+                'Fine Dining Restaurant',
+                'Tennis Courts & Pro Instructor',
+                'Exclusive Club Lounge'
+            ]
+        }
+        
+        # Define location keywords for better type detection
+        self.location_keywords = {
+            'beach': ['beach', 'coast', 'sea', 'ocean', 'bay', 'island', 'goa', 'maldives', 'caribbean'],
+            'himalayan': [
+                'himachal', 'uttarakhand', 'sikkim', 'kashmir',
+                'manali', 'shimla', 'dharamshala', 'mussoorie', 'nainital', 'dehradun', 'gangtok',
+                'kullu', 'dalhousie', 'chamba', 'kinnaur', 'lahaul', 'spiti'
+            ],
+            'mountain': [
+                'mountain', 'hill', 'alps', 'peak', 'cliff'
+            ],
+            'city': ['city', 'town', 'urban', 'metro', 'delhi', 'mumbai', 'bangalore', 'kolkata', 'chennai'],
+            'resort': ['resort', 'villa', 'palace', 'retreat']
+        }
+        
         # Generate descriptions using T5 model
         self.generate_descriptions()
         
@@ -106,147 +194,172 @@ class SinglePageBrochureGenerator:
             'full_bleed'
         ]
         
+    def determine_location_type(self):
+        """Determine the type of location (beach, mountain, city, resort) based on location name and keywords"""
+        location_lower = f"{self.location} {self.hotel_name}".lower()
+        
+        # First check for Himalayan locations
+        if any(word in location_lower for word in self.location_keywords['himalayan']):
+            return 'himalayan'
+        # Then check for other specific Indian locations
+        elif any(word in location_lower for word in self.location_keywords['mountain']):
+            return 'mountain'
+        elif any(word in location_lower for word in self.location_keywords['beach']):
+            return 'beach'
+        elif any(word in location_lower for word in self.location_keywords['city']):
+            return 'city'
+        
+        # If no specific match found, check for general keywords
+        for location_type, keywords in self.location_keywords.items():
+            if any(keyword in location_lower for keyword in keywords):
+                return location_type
+        
+        # Default to resort if no specific type detected
+        return 'resort'
+
+    def validate_amenity_for_location(self, amenity, location_type):
+        """Validate if an amenity is appropriate for the given location type"""
+        amenity_lower = amenity.lower()
+        
+        # Define forbidden words for each location type
+        forbidden_words = {
+            'himalayan': ['beach', 'ocean', 'sea', 'marine', 'coastal', 'yacht', 'surf'],
+            'mountain': ['beach', 'ocean', 'sea', 'marine', 'coastal', 'yacht', 'surf'],
+            'beach': ['mountain', 'ski', 'hiking', 'alpine', 'peak', 'himalayan'],
+            'city': ['beach', 'mountain', 'ski', 'ocean', 'himalayan'],
+            'resort': []  # Resorts can have more flexibility
+        }
+        
+        # Define required themes for each location type
+        required_themes = {
+            'himalayan': ['mountain', 'valley', 'peak', 'adventure', 'traditional', 'nature'],
+            'mountain': ['mountain', 'valley', 'peak', 'adventure', 'nature'],
+            'beach': ['sea', 'ocean', 'beach', 'coastal', 'water'],
+            'city': ['urban', 'city', 'modern', 'metropolitan'],
+            'resort': ['luxury', 'exclusive', 'premium']
+        }
+        
+        # Check for forbidden words
+        if any(word in amenity_lower for word in forbidden_words.get(location_type, [])):
+            return False
+            
+        # Check for at least one required theme (except for resort type)
+        if location_type != 'resort':
+            if not any(theme in amenity_lower for theme in required_themes[location_type]):
+                return False
+        
+        return True
+
+    def get_fallback_description(self, section):
+        """Get fallback description for a specific section based on location type"""
+        try:
+            # Get the location type, defaulting to 'resort' if not found
+            location_type = getattr(self, 'location_type', 'resort')
+            
+            # If section is "all", return all fallback descriptions for the location type
+            if section == "all":
+                self.descriptions = self.fallback_descriptions[location_type]
+                return
+            
+            # Return the specific section's fallback description
+            return self.fallback_descriptions[location_type].get(section, "")
+        except Exception as e:
+            print(f"Error getting fallback description: {str(e)}")
+            # Return a very basic fallback if everything else fails
+            if section == "overview":
+                return f"Welcome to {self.hotel_name}, a luxury destination in {self.location}."
+            elif section == "room":
+                return "Our luxurious rooms and suites feature premium amenities and elegant décor."
+            elif section == "dining":
+                return "Experience exceptional dining at our signature restaurant."
+            else:
+                return ""
+    
     def generate_descriptions(self):
         """Generate descriptions using T5 model"""
         print("\nGenerating descriptions from T5...")
         
+        # Determine location type using improved detection
+        self.location_type = self.determine_location_type()
+        print(f"\nDetected location type: {self.location_type} for {self.location}")
+
         # Prepare prompts for T5 that incorporate hotel name and location
         prompts = {
             "overview": f"Generate a brief description of {self.hotel_name} in {self.location}, highlighting its main features and surroundings",
             "room": f"Describe the luxury accommodations at {self.hotel_name} in {self.location}, focusing on room features and views",
             "dining": f"Describe the dining experience at {self.hotel_name} in {self.location}. Focus on: 1) Local cuisine specialties from {self.location}, 2) Signature dishes, 3) Restaurant atmosphere and views. Make it specific to the location's culinary culture.",
-            "amenities": f"List 6 ultra-luxury amenities for {self.hotel_name} in {self.location}, focusing on unique features that match the location. Format as simple list."
+            "amenities": f"List exactly 6 ultra-luxury amenities for {self.hotel_name} in {self.location}. Focus on unique features that match this {self.location_type} location. Each amenity should be specific to {self.location} and its culture. Format as simple list. For a {self.location_type} location, focus on relevant amenities (e.g., for mountains: skiing, hiking, mountain views; for beach: water sports, ocean views)."
         }
 
-        # Define default location-based dining descriptions
-        location_based_dining = {
-            'beach': f"Experience world-class dining with fresh seafood and tropical flavors at our oceanfront restaurant. Our expert chefs combine local {self.location} specialties with international cuisine, served in a stunning setting with panoramic ocean views.",
-            'mountain': f"Savor exceptional cuisine at our signature mountain-view restaurant, where local {self.location} ingredients meet innovative cooking techniques. Enjoy regional specialties and international dishes while taking in breathtaking alpine vistas.",
-            'city': f"Indulge in refined dining at our acclaimed restaurant, featuring a sophisticated blend of {self.location} culinary traditions and contemporary gastronomy. Our master chefs create memorable dining experiences in an elegant urban setting.",
-            'resort': f"Discover culinary excellence at our signature restaurant, where {self.location}'s finest ingredients are transformed into extraordinary dishes. Enjoy a perfect blend of local specialties and international cuisine in an atmosphere of refined luxury."
-        }
-
-        # Determine location type for fallback
-        location_lower = f"{self.location} {self.hotel_name}".lower()
-        if any(word in location_lower for word in ['beach', 'coast', 'sea', 'ocean', 'bay', 'island']):
-            location_type = 'beach'
-        elif any(word in location_lower for word in ['mountain', 'hill', 'alps', 'peak', 'cliff']):
-            location_type = 'mountain'
-        elif any(word in location_lower for word in ['city', 'town', 'urban', 'metro']):
-            location_type = 'city'
-        else:
-            location_type = 'resort'
-
-        # Try to get descriptions from T5
         try:
             for key, prompt in prompts.items():
-                response = requests.post(
-                    "http://127.0.0.1:8005/generate",
-                    json={"prompt": prompt, "max_length": 150}
-                )
-                if response.status_code == 200:
-                    generated_text = response.json()["generated_text"].strip()
-                    if key == "dining":
-                        # Validate dining description
-                        if len(generated_text) > 50 and self.location.lower() in generated_text.lower():
-                            self.descriptions[key] = generated_text
+                try:
+                    response = requests.post(
+                        "http://127.0.0.1:8005/generate",
+                        json={"prompt": prompt, "max_length": 150}
+                    )
+                    if response.status_code == 200:
+                        generated_text = response.json()["generated_text"].strip()
+                        if key == "amenities":
+                            self.handle_amenities_generation(generated_text)
                         else:
-                            self.descriptions[key] = location_based_dining[location_type]
-                    elif key == "amenities":
-                        # Parse amenities into a list
-                        amenities_text = generated_text.split("\n")
-                        t5_amenities = []
-                        for amenity in amenities_text:
-                            clean_amenity = amenity.strip()
-                            clean_amenity = ' '.join(clean_amenity.split()[1:]) if clean_amenity and (clean_amenity[0].isdigit() or clean_amenity[0] in '.-') else clean_amenity
-                            if clean_amenity and len(t5_amenities) < 6:
-                                t5_amenities.append(clean_amenity)
-                        
-                        if len(t5_amenities) == 6:
-                            self.amenities = t5_amenities
+                            self.descriptions[key] = generated_text
                     else:
-                        self.descriptions[key] = generated_text
-                else:
-                    print(f"Error generating {key} description: {response.status_code}")
-                    if key == "dining":
-                        self.descriptions[key] = location_based_dining[location_type]
+                        print(f"Error generating {key} description: {response.status_code}")
+                        if key == "amenities":
+                            self.amenities = self.fallback_amenities[self.location_type]
+                        else:
+                            self.descriptions[key] = self.get_fallback_description(key)
+                except Exception as e:
+                    print(f"Error generating {key}: {str(e)}")
+                    if key == "amenities":
+                        self.amenities = self.fallback_amenities[self.location_type]
                     else:
-                        self.descriptions[key] = ""
-                    
-            # Generate appropriate email domain based on hotel name
-            hotel_domain = self.hotel_name.lower()
-            hotel_domain = hotel_domain.replace("'", "").replace('"', "")
-            if hotel_domain.startswith("the "):
-                hotel_domain = hotel_domain[4:]  # Remove 'the ' from the beginning
-            hotel_domain = hotel_domain.replace(" ", "")
-            self.contact_email = f"reservations@{hotel_domain}.com"
-            
-            # Generate custom prompts for image generation based on location
-            self.custom_prompts = {
-                "exterior": f"Professional architectural photography of {self.hotel_name} in {self.location}, luxury resort architecture, stunning surroundings, high-end resort photography, 4k, detailed, professional lighting",
-                "room": f"Interior photography of a luxury suite at {self.hotel_name}, {self.location}, modern design, premium furnishings, panoramic views, professional hotel photography, 4k, detailed",
-                "restaurant": f"Fine dining restaurant interior at {self.hotel_name}, {self.location}, elegant modern decor, ambient lighting, professional restaurant photography, 4k, detailed"
-            }
-            
+                        self.descriptions[key] = self.get_fallback_description(key)
         except Exception as e:
             print(f"Error in description generation: {str(e)}")
             self.get_fallback_description("all")
+            self.amenities = self.fallback_amenities[self.location_type]
+
+    def handle_amenities_generation(self, generated_text):
+        """Handle the generation and validation of amenities"""
+        amenities_text = generated_text.split("\n")
+        t5_amenities = []
+        
+        for amenity in amenities_text:
+            # Clean and validate each amenity
+            clean_amenity = amenity.strip()
+            clean_amenity = ' '.join(clean_amenity.split()[1:]) if clean_amenity and (clean_amenity[0].isdigit() or clean_amenity[0] in '.-') else clean_amenity
             
-    def get_descriptions_from_t5(self):
-        try:
-            # Define prompts for different sections
-            prompts = {
-                'overview': f"Generate a luxurious description for {self.hotel_name} in {self.location}. Focus on the exclusive location, stunning views, and world-class service.",
-                'rooms': f"Describe the luxurious rooms at {self.hotel_name}. Highlight the elegant design, premium amenities, and breathtaking views.",
-                'restaurant': f"Describe the fine dining experience at {self.hotel_name}. Focus on the culinary excellence, ambiance, and scenic views."
-            }
-            
-            descriptions = {}
-            max_retries = 3
-            
-            for section, prompt in prompts.items():
-                for attempt in range(max_retries):
-                    try:
-                        response = requests.post(
-                            'http://127.0.0.1:8005/generate',
-                            json={
-                                'prompt': prompt,
-                                'max_length': 100,
-                                'temperature': 0.7
-                            },
-                            timeout=10
-                        )
-                        
-                        if response.status_code == 200:
-                            descriptions[section] = response.json()['generated_text']
-                            break
-                        elif response.status_code == 429:  # Rate limit
-                            if attempt < max_retries - 1:
-                                time.sleep(3)  # Wait before retry
-                                continue
-                            else:
-                                print(f"Error generating description: {response.status_code}")
-                                descriptions[section] = self.get_fallback_description(section)
-                        else:
-                            print(f"Error generating description: {response.status_code}")
-                            descriptions[section] = self.get_fallback_description(section)
-                            break
-                            
-                    except Exception as e:
-                        print(f"Error generating description: {str(e)}")
-                        descriptions[section] = self.get_fallback_description(section)
-                        break
-            
-            return descriptions
-            
-        except Exception as e:
-            print(f"Error in get_descriptions_from_t5: {str(e)}")
-            return {
-                'overview': self.get_fallback_description('overview'),
-                'rooms': self.get_fallback_description('rooms'),
-                'restaurant': self.get_fallback_description('restaurant')
-            }
-            
+            # Validate the amenity
+            if (clean_amenity and 
+                len(clean_amenity) > 10 and
+                self.validate_amenity_for_location(clean_amenity, self.location_type) and
+                len(t5_amenities) < 6):
+                t5_amenities.append(clean_amenity)
+        
+        # If we don't have exactly 6 valid amenities, use fallback
+        if len(t5_amenities) == 6:
+            self.amenities = t5_amenities
+        else:
+            print(f"Using fallback amenities for {self.location_type} location")
+            self.amenities = self.fallback_amenities[self.location_type]
+        
+        # Generate appropriate email domain based on hotel name
+        hotel_domain = self.hotel_name.lower()
+        hotel_domain = hotel_domain.replace("'", "").replace('"', "")
+        if hotel_domain.startswith("the "):
+            hotel_domain = hotel_domain[4:]  # Remove 'the ' from the beginning
+        hotel_domain = hotel_domain.replace(" ", "")
+        self.contact_email = f"reservations@{hotel_domain}.com"
+        
+        # Generate custom prompts for image generation based on location
+        self.custom_prompts = {
+            "exterior": f"Professional architectural photography of {self.hotel_name} in {self.location}, luxury resort architecture, stunning surroundings, high-end resort photography, 4k, detailed, professional lighting",
+            "room": f"Interior photography of a luxury suite at {self.hotel_name}, {self.location}, modern design, premium furnishings, panoramic views, professional hotel photography, 4k, detailed",
+            "restaurant": f"Fine dining restaurant interior at {self.hotel_name}, {self.location}, elegant modern decor, ambient lighting, professional restaurant photography, 4k, detailed"
+        }
+        
     def create_gradient_background(self, width, height):
         background = Image.new('RGB', (width, height), self.colors['primary'])
         overlay = Image.new('RGB', (width, height), self.colors['secondary'])
